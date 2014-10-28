@@ -1,0 +1,28 @@
+{
+  "name": "bootstrap-starter",
+  "version": "0.0.0",
+  "authors": [
+    "Peter Demaria <peter.demaria@bluetonemedia.com>"
+  ],
+  "description": "A basic responsive ready template",
+  "main": "index.html",
+  "keywords": [
+    "responsive",
+    "bootstrap",
+    "webshims",
+    "html5"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.bluetonemedia.com/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0+2"
+  }
+}
