@@ -34,7 +34,7 @@ module.exports = function (grunt) {
         },
         watch: {
             sass: {
-                files: '<%= project.assets %>sass/{,*/}*.{scss,sass}',
+                files: ['<%= project.assets %>sass/{,*/}*.{scss,sass}', 'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/{,*/}*.{scss,sass}'],
                 tasks: ['sass:dev', 'cssmin', 'uglify']
             }
         }
