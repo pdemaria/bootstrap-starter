@@ -22,6 +22,19 @@
 		Embeds
 		************************************************************************/
     </style>
+    
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/webshim/js-webshim/minified/polyfiller.js"></script>
+    <script>
+	// Initialize webshims
+	webshims.setOptions('basePath', '/images/gigafi/js/js-webshim/minified/shims/');
+	
+	webshims.setOptions('forms', {
+		addValidators: true
+	});
+	
+	webshims.polyfill('forms');
+    </script>
 </head>
 
 <body>
