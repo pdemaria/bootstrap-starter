@@ -1,4 +1,4 @@
-bootstrap-starter
+Bootstrap Starter
 =================
 
 A basic responsive ready template.. Not yet production ready because, life.

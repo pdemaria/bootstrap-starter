@@ -23,6 +23,11 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0+2"
+    "bootstrap-sass-official": "~3.2.0+2",
+    "jquery.cycle2.min": "https://raw.github.com/malsup/malsup.github.com/master/min/jquery.cycle2.min.js",
+    "modernizr": "~2.8.3"
+  },
+  "devDependencies": {
+    "webshim": "~1.15.5"
   }
 }
