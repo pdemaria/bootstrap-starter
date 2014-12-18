@@ -8,26 +8,14 @@
 
     <title>Heyyyya</title>
     <!-- Bootstrap core CSS -->
-    <link href="bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css" media="screen">
-		/************************************************************************
-		Generalismo
-		************************************************************************/
-		
-		/************************************************************************
-		Maps
-		************************************************************************/
-		
-		/************************************************************************
-		Embeds
-		************************************************************************/
-    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Site Specific CSS -->
     
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="bower_components/webshim/js-webshim/minified/polyfiller.js"></script>
+    <script src="js/modernizr/modernizr.js"></script>
+    <script src="js/webshims/js-webshim/minified/polyfiller.js"></script>
     <script>
 	// Initialize webshims
-	webshims.setOptions('basePath', '/images/gigafi/js/js-webshim/minified/shims/');
+	webshims.setOptions('basePath', 'js/webshims/js-webshims/minified/shims/');
 	
 	webshims.setOptions('forms', {
 		addValidators: true
@@ -38,6 +26,11 @@
 </head>
 
 <body>
+	 <!--[if lt IE 8]>
+		         <div role="alert" class="alert alert-warning text-center"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+</div>
+<![endif]-->
     <header class="navbar navbar-static-top" role="banner">
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
@@ -67,6 +60,14 @@
             </div>
         </div>
     </header>
+    
+    <!--[if lt IE 8]>
+	<div role="alert" class="alert alert-warning text-center">
+		<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	</div>
+	<![endif]-->
+    
  <!-- container -->
     <div class="wrapper container">
         <!-- row -->
@@ -240,7 +241,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-</script> <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js">
+</script> <script src="js/bootstrap.min.js">
 </script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
      <script src="js/ie10-viewport-bug-workaround.js">
 </script>
