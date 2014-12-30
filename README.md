@@ -1,7 +1,7 @@
 Bootstrap Starter
 =================
 
-A basic, responsive, Bootstrap 3.0 template-building environment.. Most likely production ready. The ultimate goal of this project is to create a fairly bulletproof template.
+A basic, responsive, Bootstrap 3.0 template-building environment.. Most likely production ready. The ultimate goal of this project is to create a fairly snappy, bulletproof template-authoring environment with some of my favorite stuff.
 
 ##Getting Started
 
@@ -29,7 +29,7 @@ OR
 ``` bash
 grunt -v
 ```
-Grunt runs verbose (clueing you into the errors and the whatnot). A `watch` task will refresh your page/s as you edit (uses `liveReload.js`, install __[http://livereload.com/](the appropriate extension for your browser)__, you'll thank me later) if you're set up for the correct port (`liveReload` uses 35729 by default): `localhost:35729/index.html`. 
+Grunt runs verbose (clueing you into the errors and the whatnot). A `watch` task will refresh your page/s as you edit (uses `liveReload.js`, install __[the appropriate extension for your browser](http://livereload.com/)__, you'll thank me later) if you're set up for the correct port (`liveReload` uses 35729 by default): `localhost:35729/index.html`. 
 6. That's it! Do your worst and customize this thing out, if you do things __the Way Way__ you can:
 * Customize Bootstrap via `bootstrap-starter/sass/style.scss` (be sure to read the comments, not all variables should be edited)
 * Extend Bootstrap and create your own classes using SASS (examples can be found in `style.scss`)
