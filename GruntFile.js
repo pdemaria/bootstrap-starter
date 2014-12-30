@@ -49,7 +49,9 @@ module.exports = function (grunt) {
         copy: {
 			main: {
 				files: [
-					//Bootstrap Fonts
+					// Uncompressed CSS
+					{expand: true, cwd: 'bower_components/bootstrap-sass-official/assets/stylesheets/', src: ['bootstrap.css'],dest: '<%= project.assets %>css/', filter: 'isFile'},
+					// Bootstrap Fonts
 					{expand: true, cwd: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/', src: ['**/*'], dest: '<%= project.assets %>fonts/bootstrap/', filter: 'isFile'},
 					// JS
 					{expand: true, cwd: 'bower_components/webshim/', src: ['**/*'], dest: '<%= project.assets %>js/webshims/'},

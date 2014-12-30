@@ -42,7 +42,7 @@ bower install
 ```
 
 ##To-Do
-- [x] Organize dependancies into production-ready directories using Grunt and whatever NPMs might be needed to automate
+- [x] Organize dependancies into production-ready directories using Grunt and whatever Tasks might be needed to automate
 - [x] Add Autoprefixer to build process for Bootstrap CSS
 - [ ] Fork the Dev branch of this repo (on my to-do list) for shared access and staging to Master
 - [ ] Add optional versions of index.html, fixed and static header, sidebars, thumbnail grids, common UI etc.
