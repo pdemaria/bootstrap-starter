@@ -1,0 +1,16 @@
+//
+// Backgrounds
+// --------------------------------------------------
+
+header.navbar {
+	
+.navbar {	
+	background: $header-bg-color $header-img $header-img-repeat $header-img-position;
+		@if $header-img-height != null {
+			height: $header-img-height;
+			min-height: $header-img-height;		
+		}
+	}
+	
+}
+

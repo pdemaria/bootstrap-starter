@@ -5,17 +5,19 @@ module.exports = function (grunt) {
         project: {
             app: ['bootstrap-starter/'],
             assets: ['<%= project.app %>'],
-            css: ['<%= project.assets %>sass/style.scss']
+            css: ['<%= project.assets %>sass/bootstrap.scss']
         },
         sass: {
             dev: {
                 options: {
                     style: 'expanded',
                     compass: false,
-                    precision: 10
+                    precision: 10,
+                    sourcemap: 'none'
                 },
                 files: {
-                    'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.css': '<%= project.css %>'
+                    'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.css': '<%= project.css %>',
+                    '<%= project.app %>css/style.css': '<%= project.app %>sass/style.scss'
                 }
             }
         },

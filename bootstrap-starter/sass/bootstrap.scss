@@ -1,5 +1,5 @@
 //
-// Bootstrap Variables - Adjust to alter breakpoints, etc. **
+// Bootstrap Variables - Adjust to alter breakpoints, etc.
 // --------------------------------------------------
 
 
@@ -25,7 +25,7 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               #FFFFFF !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
@@ -848,7 +848,10 @@ $hr-border:                   $gray-lighter !default;
 
 @import '../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
 
-//** Extend Bootstrap Components As Below
+//== Extend Bootstrap Components As Below
+//
+//##
+
 .wrapper {
   @extend .container;
   border: 0.5px dotted #EFEFEF;
