@@ -3,14 +3,22 @@
 // --------------------------------------------------
 
 header.navbar {
-	
-.navbar {	
 	background: $header-bg-color $header-img $header-img-repeat $header-img-position;
 		@if $header-img-height != null {
-			height: $header-img-height;
 			min-height: $header-img-height;		
 		}
-	}
-	
+}
+
+.logo {
+	background: $brand-img no-repeat center top;
+	width: $brand-img-width;
+	height: $brand-img-height;
+	color: transparent;
+	font-size: 0;
+	border: none;
+	outline: none;
+	background-size: cover;
+	display: inline-block;
+	position: relative;
 }
 

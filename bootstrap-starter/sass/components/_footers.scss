@@ -1,0 +1,31 @@
+//
+// Footer Styles
+// --------------------------------------------------
+
+//** Sticky Footer Styles
+@if $footer-sticky == true {
+	html {
+		position:relative;
+		min-height:100%;
+	}
+	
+	body {
+	/* Margin bottom by footer height */
+		margin-bottom:$footer-sticky-height;
+	}
+	
+	footer.main {
+		position:absolute;
+		bottom:0;
+		width:100%;
+	/* Set the fixed height of the footer here */
+		height:$footer-sticky-height;
+		background-color: $footer-bg-color;
+		
+		.container {
+			height:$footer-sticky-height;
+			padding: $footer-sticky-height * 0.1;
+			color: $footer-text;
+		}
+	}	
+}

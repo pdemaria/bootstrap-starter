@@ -25,7 +25,7 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #FFFFFF !default;
+$body-bg:               #444 !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
@@ -853,6 +853,12 @@ $hr-border:                   $gray-lighter !default;
 //##
 
 .wrapper {
-  @extend .container;
-  border: 0.5px dotted #EFEFEF;
+	@extend .container;
+	border: 0.5px dotted #EFEFEF;
+	background: #FFFFFF;
+	min-width: 320px;
+}
+
+.logo {
+	@extend .navbar-brand;
 }

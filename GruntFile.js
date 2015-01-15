@@ -4,8 +4,8 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         project: {
             app: ['bootstrap-starter/'],
-            assets: ['<%= project.app %>'],
-            css: ['<%= project.assets %>sass/bootstrap.scss']
+            assets: ['bower_components/'],
+            css: ['<%= project.app %>sass/bootstrap.scss']
         },
         sass: {
             dev: {
@@ -16,25 +16,25 @@ module.exports = function (grunt) {
                     sourcemap: 'none'
                 },
                 files: {
-                    'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.css': '<%= project.css %>',
+                    '<%= project.app %>css/bootstrap.css': '<%= project.css %>',
                     '<%= project.app %>css/style.css': '<%= project.app %>sass/style.scss'
                 }
             }
         },
-		autoprefixer: { //NEEDS WORK!
+		autoprefixer: {
 			dist: {
 				options: {
 					browsers: ['last 2 versions', '> 1%', 'ie 8']
 				},
 				files: {
-					'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.css': ['bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.css']
+					'<%= project.app %>css/bootstrap.css': ['<%= project.app %>css/bootstrap.css']
 				}
 			}
 		}, 
         cssmin: {
             css: {
-                src: 'bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.css',
-                dest: '<%= project.assets %>css/bootstrap.min.css'
+                src: '<%= project.app %>css/bootstrap.css',
+                dest: '<%= project.app %>css/bootstrap.min.css'
             }
         },
         uglify: {
@@ -44,22 +44,23 @@ module.exports = function (grunt) {
     	},
             js: {
                 files: {
-                    '<%= project.assets %>js/bootstrap.min.js': ['bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js']
+                    '<%= project.app %>js/bootstrap.min.js': ['<%= project.assets %>bootstrap-sass-official/assets/javascripts/bootstrap.js']
                 }
             }
         },
         copy: {
 			main: {
 				files: [
-					// Uncompressed CSS
-					{expand: true, cwd: 'bower_components/bootstrap-sass-official/assets/stylesheets/', src: ['bootstrap.css'],dest: '<%= project.assets %>css/', filter: 'isFile'},
+					// Uncompressed CSS - This shouldn't be needed
+					//{expand: true, cwd: '<%= project.assets %>bootstrap-sass-official/assets/stylesheets/', src: ['bootstrap.css'],dest: '<%= project.app %>css/', filter: 'isFile'},
+					
 					// Bootstrap Fonts
-					{expand: true, cwd: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/', src: ['**/*'], dest: '<%= project.assets %>fonts/bootstrap/', filter: 'isFile'},
+					{expand: true, cwd: '<%= project.assets %>bootstrap-sass-official/assets/fonts/bootstrap/', src: ['**/*'], dest: '<%= project.app %>fonts/bootstrap/', filter: 'isFile'},
 					// JS
-					{expand: true, cwd: 'bower_components/webshim/', src: ['**/*'], dest: '<%= project.assets %>js/webshims/'},
-					{expand: true, cwd: 'bower_components/modernizr/', src: ['**/*'], dest: '<%= project.assets %>js/modernizr/'},
-					{expand: true, cwd: 'bower_components/jquery.cycle2.min/', src: ['**/*'], dest: '<%= project.assets %>js/jquery.cycle2.min/'},
-					{expand: true, cwd: 'bower_components/jquery-migrate/', src: ['**/*'], dest: '<%= project.assets %>js/jquery-migrate/'}
+					{expand: true, cwd: '<%= project.assets %>webshim/', src: ['**/*'], dest: '<%= project.app %>js/webshims/'},
+					{expand: true, cwd: '<%= project.assets %>modernizr/', src: ['**/*'], dest: '<%= project.app %>js/modernizr/'},
+					{expand: true, cwd: '<%= project.assets %>jquery.cycle2.min/', src: ['**/*'], dest: '<%= project.app %>js/jquery.cycle2.min/'},
+					{expand: true, cwd: '<%= project.assets %>jquery-migrate/', src: ['**/*'], dest: '<%= project.app %>js/jquery-migrate/'}
 				]
 	    	}
 	    },
@@ -69,11 +70,12 @@ module.exports = function (grunt) {
 				livereload: true,
     		},
             sass: {
-                files: ['<%= project.assets %>sass/{,*/}*.{scss,sass}'],
-                tasks: ['sass:dev']
+                files: ['<%= project.app %>sass/{,*/}*.{scss,sass}'],
+                tasks: ['sass:dev','autoprefixer','cssmin:css']
             },
+
             html: {
-                files: ['<%= project.assets %>{,*/}*.{html,css,js}'],
+                files: ['<%= project.app %>{,*/}*.{html,css,js}'],
             },
             
         }
