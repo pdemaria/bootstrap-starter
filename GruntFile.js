@@ -5,7 +5,7 @@ module.exports = function (grunt) {
         project: {
             app: ['bootstrap-starter/'],
             assets: ['bower_components/'],
-            css: ['<%= project.app %>sass/bootstrap.scss']
+            css: ['<%= project.app %>sass/style.scss']
         },
         sass: {
             dev: {
@@ -16,8 +16,7 @@ module.exports = function (grunt) {
                     sourcemap: 'none'
                 },
                 files: {
-                    '<%= project.app %>css/bootstrap.css': '<%= project.css %>',
-                    '<%= project.app %>css/style.css': '<%= project.app %>sass/style.scss'
+                    '<%= project.app %>css/style.css': '<%= project.css %>'
                 }
             }
         },
@@ -27,14 +26,14 @@ module.exports = function (grunt) {
 					browsers: ['last 2 versions', '> 1%', 'ie 8']
 				},
 				files: {
-					'<%= project.app %>css/bootstrap.css': ['<%= project.app %>css/bootstrap.css']
+					'<%= project.app %>css/style.css': ['<%= project.app %>css/style.css']
 				}
 			}
 		}, 
         cssmin: {
             css: {
-                src: '<%= project.app %>css/bootstrap.css',
-                dest: '<%= project.app %>css/bootstrap.min.css'
+                src: '<%= project.app %>css/style.css',
+                dest: '<%= project.app %>css/style.min.css'
             }
         },
         uglify: {
