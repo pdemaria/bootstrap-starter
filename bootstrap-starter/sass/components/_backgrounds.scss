@@ -1,14 +1,6 @@
 //
 // Backgrounds
 // --------------------------------------------------
-
-header.navbar {
-	background: $header-bg-color $header-img $header-img-repeat $header-img-position;
-		@if $header-img-height != null {
-			min-height: $header-img-height;		
-		}
-}
-
 .logo {
 	background: $brand-img no-repeat center top;
 	width: $brand-img-width;
@@ -21,4 +13,12 @@ header.navbar {
 	display: inline-block;
 	position: relative;
 }
+
+header.navbar {
+	background: $header-bg-color $header-img $header-img-repeat $header-img-position;
+		@if $header-img-height != null {
+			min-height: $header-img-height;		
+		}
+}
+
 

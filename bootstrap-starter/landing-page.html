@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sample Optimized Landing Page</title><!-- CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/modernizr/modernizr.js">
+</script>
+    <script src="js/webshims/js-webshim/minified/polyfiller.js">
+</script>
+    <script>
+// Initialize webshims
+    webshims.setOptions('basePath', '/js/webshims/js-webshim/minified/shims/'); 
+    webshims.setOptions('forms', {
+        addValidators: true
+    });
+
+    webshims.polyfill('forms');
+    </script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+                 <div role="alert" class="alert alert-warning text-center"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+</div>
+<![endif]-->
+
+    <header class="navbar navbar-static-top navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span></button> <a class="logo" href="/" title="Sorry Miss Jackson, I am for Real">Sorry Miss Jackson, I am for Real</a>
+            </div>
+
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Examples</a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="/2-columns.html">2 Column</a>
+                            </li>
+
+                            <li>
+                                <a href="/landing-page.html">Landing Page</a>
+                            </li>
+
+                            <li>
+                                <a href="/contact.html">Contact Page</a>
+                            </li>
+
+                            <li>
+                                <a href="/prettty.html">Parallax / Prettty</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/support.html">Support</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header><!--[if lt IE 8]>
+    <div role="alert" class="alert alert-warning text-center">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    </div>
+    <![endif]-->
+    <!-- container -->
+
+    <div class="container" role="main">
+        <!-- jumbotron -->
+
+        <div class="jumbotron">
+            <!-- row -->
+
+            <div class="row">
+                <h1 class="page-header">Sample Optimized Landing Page</h1>
+
+                <div class="col-md-6">
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p><button class="btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">Get It Get It <span class="glyphicon glyphicon-heart"></span></button><br class="clear">
+                </div><!-- /column -->
+
+                <div class="col-md-6">
+                    <!-- column -->
+
+                    <figure>
+                        <img src="images/donut.png" alt="Get it get it" class="center-block">
+                    </figure>
+                </div><!-- /column -->
+            </div><!-- /row -->
+
+            <div tabindex="-1" role="dialog" class="modal fade" aria-labelledby="modalLabel" aria-hidden="true" id="myModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" data-dismiss="modal" class="close" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+                            <h2 class="modal-title" id="modalLabel">Form</h2>
+                        </div><!-- modal -->
+
+                        <div class="modal-body">
+                            <form class="form" role="form">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="control-label">Email</label> <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox"> Email me</label>
+                                    </div>
+                                </div><button type="submit" class="btn btn-primary btn-lg btn-block">Sign Up</button>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /jumbotron -->
+    </div><!-- /container -->
+
+    <footer class="main">
+        <!-- footer -->
+
+        <div class="container">
+	        <ul class="socials pull-right">
+	        	<li><a href="" class="sr-only-focusable">Google+</a></li>
+	        	<li><a href="" class="sr-only-focusable">Facebook</a></li>
+	        	<li><a href="" class="sr-only-focusable">Twitter</a></li>
+	        	<li><a href="" class="sr-only-focusable">LinkedIn</a></li>
+	        </ul>
+            <p class="small text-center">© Company 2014</p>
+        </div>
+    </footer><!-- forking -->
+    <a href="https://github.com/pdemaria/bootstrap-starter" class="hidden-xs"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1001;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a> <!-- /forking -->
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+     <!-- Placed at the end of the document so the pages load faster -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script> <script src="js/bootstrap.min.js">
+</script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+     <script src="js/ie10-viewport-bug-workaround.js">
+</script>
+</body>
+</html>
