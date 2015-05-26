@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sample Contact Page</title><!-- CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+                 <div role="alert" class="alert alert-warning text-center"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+</div>
+<![endif]-->
+
+    <header class="navbar navbar-static-top navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span></button> <a class="logo" href="/" title="Sorry Miss Jackson, I am for Real">Sorry Miss Jackson, I am for Real</a>
+            </div>
+
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Examples</a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="/example-2-columns.html">2 Column</a>
+                            </li>
+
+                            <li>
+                                <a href="/example-landing-page.html">Landing Page</a>
+                            </li>
+
+                            <li>
+                                <a href="/example-contact.html">Contact Page</a>
+                            </li>
+
+                            <li>
+                                <a href="/example-prettty.html">Parallax / Prettty</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/pdemaria/bootstrap-starter" target="_blank">Support</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header><!--[if lt IE 8]>
+    <div role="alert" class="alert alert-warning text-center">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    </div>
+    <![endif]-->
+    <!-- container -->
+
+    <div class="wrapper container" role="main">
+        <!-- row -->
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="page-header">Sample Contact Page</h1>
+
+                <div class="well">
+                    <div class="row">
+                        <div class="col-md-7 lead">
+                            <h2>Nullam quis risus</h2>
+
+                            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                        </div>
+
+                        <div class="col-md-5">
+                            <h2>Addressess</h2>
+
+                            <address>
+                                <strong>Twitter, Inc.</strong><br>
+                                795 Folsom Ave, Suite 600<br>
+                                San Francisco, CA 94107<br>
+                                <abbr title="Phone">P:</abbr> (123) 456-7890
+                            </address>
+
+                            <address>
+                                <strong>Full Name</strong><br>
+                                <a href="mailto:#">first.last@example.com</a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+
+                <form method="post" id="conv_frm" class="form conv_frm">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="f-name" class="control-label">First Name <abbr title="First Name is a required field">*</abbr></label> <input type="text" required="required" name="FName" id="f-name" class="form-control">
+                        </div>
+
+                        <div class="col-md-6 form-group">
+                            <label for="l-name" class="control-label">Last Name <abbr title="Last Name is a required field">*</abbr></label> <input type="text" required="required" name="LName" id="l-name" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label for="job-title" class="control-label">Job Title</label> <input type="text" name="Job Title" id="job-title" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="email" class="control-label">Email <abbr title="Email is a required field (we will keep your email completely private) ">*</abbr></label> <input type="email" required="required" placeholder="email@email.com" name="Email" id="email" class="form-control">
+                        </div>
+
+                        <div class="col-md-6 form-group">
+                            <label for="day-time-phone" class="control-label">Phone</label> <input type="text" name="DayTimePhone" id="day-time-phone" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label for="industry" class="control-label">Industry</label><br>
+                            <select name="Industry" id="industry" class="form-control">
+                                <option value="">
+                                    -Choose One-
+                                </option>
+
+                                <option value="industry-accounting">
+                                    Accounting
+                                </option>
+
+                                <option value="industry-automotive-aerospace">
+                                    Automotive
+                                </option>
+
+                                <option value="industry-banking-finance">
+                                    Banking &amp; Finance
+                                </option>
+
+                                <option value="industry-business-consultancy">
+                                    Business Consulting
+                                </option>
+
+                                <option value="industry-communications">
+                                    Communications
+                                </option>
+
+                                <option value="industry-construction">
+                                    Construction
+                                </option>
+
+                                <option value="industry-document-management">
+                                    Document Management
+                                </option>
+
+                                <option value="industry-education">
+                                    Education
+                                </option>
+
+                                <option value="industry-engineering">
+                                    Engineering/Industrial Engineering
+                                </option>
+
+                                <option value="industry-fashion-retail">
+                                    Fashion &amp; Retail
+                                </option>
+
+                                <option value="industry-government-national-local">
+                                    Government - National &amp; Local
+                                </option>
+
+                                <option value="industry-human-resources-training">
+                                    Human Resources/Training
+                                </option>
+
+                                <option value="industry-insurance">
+                                    Insurance
+                                </option>
+
+                                <option value="industry-it-service-software">
+                                    IT Services/Software
+                                </option>
+
+                                <option value="industry-legal">
+                                    Legal
+                                </option>
+
+                                <option value="industry-libraries">
+                                    Libraries
+                                </option>
+
+                                <option value="industry-manufacturing">
+                                    Manufacturing
+                                </option>
+
+                                <option value="industry-media-press-publishing">
+                                    Media/Press/Publishing
+                                </option>
+
+                                <option value="industry-medical-healthcare">
+                                    Medical/Healthcare
+                                </option>
+
+                                <option value="industry-military-defence">
+                                    Military/Defense
+                                </option>
+
+                                <option value="industry-transport-logistics">
+                                    Transport/Logistics
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label for="hear-about">How did you hear about us? <abbr title="This is a required field">*</abbr></label> <select required="required" name="How did you hear about us?" id="hear-about" class="form-control">
+                                <option value="" selected="selected">
+                                    -Choose One-
+                                </option>
+
+                                <option value="Google">
+                                    Google
+                                </option>
+
+                                <option value="Contact by a salesperson">
+                                    Contact by a salesperson
+                                </option>
+
+                                <option value="Recommendation from a friend/colleague">
+                                    Recommendation from a friend/colleague
+                                </option>
+
+                                <option value="Advertisement">
+                                    Advertisement
+                                </option>
+
+                                <option value="Prior experience">
+                                    Prior experience
+                                </option>
+
+                                <option value="Prior experience">
+                                    Social Media (Twitter, Facebook, LinkedIn, Google+)
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label for="hear-about-other" class="control-label">If Other</label> <input type="text" name="How did you hear about us?" id="hear-about-other" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label for="questions-comments" class="control-label">Questions/Comments</label> 
+                            <textarea rows="5" name="Questions/Comments" id="questions-comments" cols="30" class="form-control">
+</textarea>
+                        </div>
+                    </div>
+
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="Yes, please" name="Opt-In" checked="checked">Email me occasional offers</label>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-6">
+                            <button type="submit" class="btn-block btn-lg btn-success">Go!</button>
+                        </div>
+                    </div>
+                </form><br>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57815.08031103471!2d-77.24281307246478!3d25.08687750704383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7db93cb9b50b%3A0x4f27a6bcae38f950!2sParadise+Island%2C+The+Bahamas!5e0!3m2!1sen!2sus!4v1422391858184" frameborder="0" style="border:0"></iframe>
+                </div><br class="clear">
+            </div><!-- /column -->
+        </div><!-- /row -->
+    </div><!-- /container -->
+
+    <footer class="main">
+        <!-- footer -->
+
+        <div class="container">
+            <p class="small text-center">© Company 2014</p>
+        </div>
+    </footer>
+    
+    <!-- forking -->
+    <a href="https://github.com/pdemaria/bootstrap-starter" class="hidden-xs"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1001;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+    <!-- /forking -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/modernizr/modernizr.js"></script> 
+<script src="js/webshims/js-webshim/minified/polyfiller.js"></script>
+<script src="js/jquery.cycle2.min/index.js"></script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script> 
+<script>
+// Initialize webshims
+    webshims.setOptions('basePath', '/js/webshims/js-webshim/minified/shims/');
+    webshims.setOptions('forms', {
+    addValidators: true
+    });
+    webshims.polyfill('forms');
+</script>
+</body>
+</html>

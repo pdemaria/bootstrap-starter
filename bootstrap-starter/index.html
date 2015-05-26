@@ -6,79 +6,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Heyyyy-Yaaaaaaaaaa</title>
-
-    <!-- CSS -->
+    <title>Heyyyy-Yaaaaaaaaaa</title><!-- CSS -->
     <link href="css/style.min.css" rel="stylesheet">
-    
-    <script src="js/modernizr/modernizr.js"></script>
-    <script src="js/webshims/js-webshim/minified/polyfiller.js"></script>
-    <script>
-	// Initialize webshims
-	webshims.setOptions('basePath', '/js/webshims/js-webshim/minified/shims/');	
-	webshims.setOptions('forms', {
-		addValidators: true
-	});
-	
-	webshims.polyfill('forms');
-    </script>
 </head>
 
 <body>
-	 <!--[if lt IE 8]>
-		         <div role="alert" class="alert alert-warning text-center"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <!--[if lt IE 8]>
+                 <div role="alert" class="alert alert-warning text-center"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 </div>
 <![endif]-->
-    <header class="navbar navbar-static-top navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-                    </button> <a class="logo" href="/" title="Sorry Miss Jackson, I am for Real">Sorry Miss Jackson, I am for Real</a>
-                </div>
 
-                    <nav  class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                        <ul class="nav navbar-nav navbar-right">
+    <header class="navbar navbar-static-top navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span></button> <a class="logo" href="/" title="Sorry Miss Jackson, I am for Real">Sorry Miss Jackson, I am for Real</a>
+            </div>
+
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Examples</a>
+
+                        <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a href="/">Home</a>
+                                <a href="/example-2-columns.html">2 Column</a>
                             </li>
-							<li role="presentation" class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-								Examples <span class="caret"></span>
-								</a>
-									<ul class="dropdown-menu" role="menu">
-									 	<li><a href="/2-columns.html">2 Column</a></li>
-									 	<li><a href="/landing-page.html">Landing Page</a></li>
-									 	<li><a href="/contact.html">Contact Page</a></li>
-									 	<li><a href="/prettty.html">Parallax / Prettty</a></li>
-									</ul>
-							</li>
+
                             <li>
-                                <a href="https://github.com/pdemaria/bootstrap-starter" target="_blank">Support</a>
+                                <a href="/example-landing-page.html">Landing Page</a>
+                            </li>
+
+                            <li>
+                                <a href="/example-contact.html">Contact Page</a>
+                            </li>
+
+                            <li>
+                                <a href="/example-prettty.html">Parallax / Prettty</a>
                             </li>
                         </ul>
-                    </nav>
-            </div>
-    </header>
-    
-    <!--[if lt IE 8]>
-	<div role="alert" class="alert alert-warning text-center">
-		<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	</div>
-	<![endif]-->
-    
- <!-- container -->
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/pdemaria/bootstrap-starter" target="_blank">Support</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header><!--[if lt IE 8]>
+    <div role="alert" class="alert alert-warning text-center">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    </div>
+    <![endif]-->
+    <!-- container -->
+
     <div class="wrapper container" role="main">
         <!-- row -->
+
+
+                <div class="slide-nav">
+                    <div data-cycle-timeout="7000" data-cycle-slides="&gt; img" data-cycle-pause-on-hover="true" data-cycle-fx="fade" data-cycle-auto-height="1024:765" class="slides cycle-slideshow"><img src="images/The-Library-of-Congress-Rough_sea_Bognor_England-c_1890.jpg" alt="The-Library-of-Congress-Rough_sea_Bognor_England-c_1890"> <img src="images/The-Library-of-Congress-Rough_sea_Bognor_England-c_1890.jpg" alt="The-Library-of-Congress-Rough_sea_Bognor_England-c_1890"> <img src="images/The-Library-of-Congress-Rough_sea_Bognor_England-c_1890.jpg" alt="The-Library-of-Congress-Rough_sea_Bognor_England-c_1890"></div>
+                </div>
+
+ 
         <div class="row">
             <div class="col-md-12">
-				<div class="heading">            
-                <h1 class="page-header">The Everything</h1>
-				</div>
+                <div class="row text-center">
+                   
+                    <div class="col-sm-4">
+                            <img src="images/norge-chica.jpg" alt="..." class="img-circle">
+
+                            <div class="caption">
+                                <h3>Thumbnail label</h3>
+
+                                <p>Nullam quis risus eget urna mollis ornare vel eu leo. </p>
+
+                            </div>
+                    </div>
+                     <div class="col-sm-4">
+                            <img src="images/norge-chica.jpg" alt="..." class="img-circle">
+
+                            <div class="caption">
+                                <h3>Thumbnail label</h3>
+
+                                <p>Nullam quis risus eget urna mollis ornare vel eu leo. </p>
+
+                            </div>
+                    </div>
+                    <div class="col-sm-4">
+                            <img src="images/norge-chica.jpg" alt="..." class="img-circle">
+
+                            <div class="caption">
+                                <h3>Thumbnail label</h3>
+
+                                <p>Nullam quis risus eget urna mollis ornare vel eu leo. </p>
+
+                            </div>
+                    </div>
+                    
+                </div>
+                
+                               <h1 class="page-header">The Everything</h1>
+
                 <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
 
                 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
@@ -240,24 +274,35 @@
             </div><!-- /column -->
         </div><!-- /row -->
     </div><!-- /container -->
-    <footer class="main"><!-- footer -->
-	    <div class="container">
-		    <p class="small text-center">
-		    © Company 2014
-		    </p>
-	    </div>
-    </footer>
-    
-    <!-- forking -->
-    <a href="https://github.com/pdemaria/bootstrap-starter"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1001;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
-    <!-- /forking -->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-</script> <script src="js/bootstrap.min.js">
-</script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-     <script src="js/ie10-viewport-bug-workaround.js">
+
+    <footer class="main">
+        <!-- footer -->
+
+        <div class="container">
+            <p class="small text-center">© Company 2014</p>
+        </div>
+    </footer><!-- forking -->
+    <a href="https://github.com/pdemaria/bootstrap-starter"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1001;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a> <!-- /forking -->
+</body>
+</html>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr/modernizr.js"></script>
+<script src="js/webshims/js-webshim/minified/polyfiller.js"></script>
+<script src="js/jquery.cycle2.min/index.js"></script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script>
+// Initialize webshims
+webshims.setOptions('basePath', '/js/webshims/js-webshim/minified/shims/');
+webshims.setOptions('forms', {
+	addValidators: true
+});
+webshims.polyfill('forms');
 </script>
 </body>
 </html>

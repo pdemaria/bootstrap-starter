@@ -28,8 +28,9 @@ Next you'll want to run grunt, you can either run:
  ``` bash
  grunt -v 
  ``` 
+ The build task does just that, it builds the thing out, compiles SASS, etc... No watch task, no live reload.
  
- Grunt runs verbose (thus the `-v`, verbose clues you into the errors and the whatnot, down to filenames and linenumbers). A `watch` task will refresh your page/s as you edit (uses `liveReload.js`, install __[http://livereload.com/](the appropriate extension for your browser)__, you'll thank me later) if you're set up for the correct port (`liveReload` uses 35729 by default): `localhost:35729/index.html`.
+ Grunt runs verbose (thus the `-v`, verbose clues you into the errors and the whatnot, down to filenames and line-numbers). A `watch` task will refresh your page/s as you edit (uses `liveReload.js`, install __[http://livereload.com/](the appropriate extension for your browser)__, you'll thank me later) if you're set up for the correct port (`liveReload` uses 35729 by default): `localhost:35729/index.html`.
   
 And that's it! Do your worst and customize this thing out, if you do things the hard way you can:
 * Customize Bootstrap via `bootstrap-starter/sass/style.scss` (be sure to read the comments, not all variables should be edited, because math)

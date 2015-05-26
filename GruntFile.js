@@ -43,7 +43,7 @@ module.exports = function (grunt) {
     	},
             js: {
                 files: {
-                    '<%= project.app %>js/bootstrap.min.js': ['<%= project.assets %>bootstrap-sass-official/assets/javascripts/bootstrap.js']
+                    '<%= project.app %>js/bootstrap.min.js': ['<%= project.assets %>bootstrap-sass/assets/javascripts/bootstrap.js']
                 }
             }
         },
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
 					//{expand: true, cwd: '<%= project.assets %>bootstrap-sass-official/assets/stylesheets/', src: ['bootstrap.css'],dest: '<%= project.app %>css/', filter: 'isFile'},
 					
 					// Bootstrap Fonts
-					{expand: true, cwd: '<%= project.assets %>bootstrap-sass-official/assets/fonts/bootstrap/', src: ['**/*'], dest: '<%= project.app %>fonts/bootstrap/', filter: 'isFile'},
+					{expand: true, cwd: '<%= project.assets %>bootstrap-sass/assets/fonts/bootstrap/', src: ['**/*'], dest: '<%= project.app %>fonts/bootstrap/', filter: 'isFile'},
 					// JS
 					{expand: true, cwd: '<%= project.assets %>webshim/', src: ['**/*'], dest: '<%= project.app %>js/webshims/'},
 					{expand: true, cwd: '<%= project.assets %>modernizr/', src: ['**/*'], dest: '<%= project.app %>js/modernizr/'},

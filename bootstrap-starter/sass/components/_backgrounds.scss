@@ -1,6 +1,8 @@
 //
 // Backgrounds
 // --------------------------------------------------
+
+//** Logo
 .logo {
 	background: $brand-img no-repeat center top;
 	width: $brand-img-width;
@@ -14,6 +16,7 @@
 	position: relative;
 }
 
+//** Nav
 header.navbar {
 	background: $header-bg-color $header-img $header-img-repeat $header-img-position;
 		@if $header-img-height != null {
@@ -21,4 +24,13 @@ header.navbar {
 		}
 }
 
+//** Footer
+footer.main {
+	background: $footer-bg-color $footer-img $footer-img-repeat $footer-img-position;		
+	.container {
+		@if $footer-height != null {
+			min-height: $footer-height;		
+		}
+	}	
+}
 

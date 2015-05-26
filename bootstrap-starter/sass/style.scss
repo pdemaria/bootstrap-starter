@@ -844,7 +844,7 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
 
-@import '../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
 //== Bootstrap Extending Components As Below
 //
@@ -878,11 +878,19 @@ $hr-border:                   $gray-lighter !default;
 	border-radius: 10px 10px 10px 10px;
 }
 
-
 //
 // Post-Bootstrap Template Variables - Adjust to adjust banner images and backgrounds, settup sprites, etc.
 // --------------------------------------------------
 
+//== Generalismo
+//
+//##
+.wrapper {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
 
 //== Backgrounds
 //
