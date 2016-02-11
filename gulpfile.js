@@ -36,3 +36,12 @@ gulp.task("minifyScripts", function(){
 		.pipe(rename('app.min.js')) //Renames the app.js to app.min.js
 		.pipe(gulp.dest('js'));
 });
+
+//Compile your Sass into CSS
+gulp.task('compileSass', function() {
+  return gulp.src("scss/application.scss")
+    .pipe(maps.init()) //Sass source maps
+    .pipe(sass())
+    .pipe(maps.write('./')) //Path relative to your gulp.dest
+    .pipe(gulp.dest('css'));
+});
