@@ -28,3 +28,11 @@ gulp.task("concatScripts", function() {
   .pipe(maps.write('./')) //Path relative to your gulp.dest (sibling of app.js)
   .pipe(gulp.dest('js')); //Your destination folder
 });
+
+//Minify your concatenated JS files
+gulp.task("minifyScripts", function(){
+	return gulp.src("js/app.js")
+		.pipe(uglify())
+		.pipe(rename('app.min.js')) //Renames the app.js to app.min.js
+		.pipe(gulp.dest('js'));
+});
