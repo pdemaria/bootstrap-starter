@@ -47,8 +47,14 @@ gulp.task('compileSass', function() {
 });
 
 //Provide file(s) to be watched inside watch() method
-//Basic globbing pattern given looks in scss folder any subdirectories 
+//Basic globbing pattern given looks in scss folder any subdirectories
 //Then any file with a .scss extension
 gulp.task('watchSass', function() {
   gulp.watch('scss/**/*.scss', ['compileSass']);
 })
+
+//Run gulp build to concatenate, minify, and compile in one go
+gulp.task("build", ['minifyScripts', 'compileSass']);
+
+//For production
+gulp.task("default", ['build']);
