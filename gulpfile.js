@@ -39,7 +39,7 @@ gulp.task("minifyScripts", function(){
 
 //Compile your Sass into CSS
 gulp.task('compileSass', function() {
-  return gulp.src("scss/application.scss")
+  return gulp.src("scss/application.scss") //Change scss/application.scss to whatever your project's sass is
     .pipe(maps.init()) //Sass source maps
     .pipe(sass())
     .pipe(maps.write('./')) //Path relative to your gulp.dest
