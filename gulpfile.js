@@ -45,3 +45,10 @@ gulp.task('compileSass', function() {
     .pipe(maps.write('./')) //Path relative to your gulp.dest
     .pipe(gulp.dest('css'));
 });
+
+//Provide file(s) to be watched inside watch() method
+//Basic globbing pattern given looks in scss folder any subdirectories 
+//Then any file with a .scss extension
+gulp.task('watchSass', function() {
+  gulp.watch('scss/**/*.scss', ['compileSass']);
+})
