@@ -12,6 +12,10 @@ var gulp = require('gulp'),
 //Switch .src array with your actual files
 //Makes one file called app.js in this example
 //Also provides source map for easy debugging
+/*
+  MAKE SURE YOU PUT THE JS FILES IN THE ORDER
+  YOU WANT THEM CONCATENATED IN
+*/
 gulp.task("concatScripts", function() {
   return gulp.src([
       //Replace these with your own.
