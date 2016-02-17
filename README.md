@@ -1,7 +1,15 @@
 Bootstrap Starter
 =================
 
-A basic, responsive, Bootstrap 3.0 template-building environment.. Most likely production ready. The ultimate goal of this project is to create a fairly snappy, bulletproof template-authoring environment with some of my favorite stuff.
+A basic, responsive, Bootstrap 4.0 template-building environment.. The ultimate goal of this project is to create a fairly snappy, bulletproof template-authoring environment with some of my favorite stuff.
+
+```
+# Updates NPM packages and Grunt
+source provision.sh && tools_install
+
+# Followed by the Initial Wordpress Install
+source provision.sh && wordpress_install
+```
 
 ##Getting Started
 Below follows basic setup, you can go ahead and do your worst just cloning the project, but to work with SASS and really customize things you'll want to follow these steps:
