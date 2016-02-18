@@ -1,25 +1,44 @@
 'use strict';
-module.exports = function (grunt) {
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-        project: {
-            app: ['bootstrap-starter/'],
-            assets: ['bower_components/'],
-            css: ['<%= project.app %>sass/style.scss']
-        },
-        sass: {
-            dev: {
-                options: {
-                    style: 'expanded',
-                    compass: false,
-                    precision: 10,
-                    sourcemap: 'none'
-                },
-                files: {
-                    '<%= project.app %>css/style.css': '<%= project.css %>'
-                }
-            }
-        },
+module.exports = function(grunt) {
+	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
+		project: {
+			app: ['bootstrap-starter/'],
+			assets: ['bower_components/'],
+			css: ['<%= project.app %>sass/style.scss']
+		},
+		'compile-handlebars': {
+			compile: { // From globalJsonGlobbedTemplate, see https://www.npmjs.com/package/grunt-compile-handlebars
+				files: [{
+					expand: true,
+					cwd: 'templates/', 
+					src: '*.handlebars',
+					dest: 'bootstrap-starter/',
+					ext: '.html'
+				}],
+				templateData: 'templates/*.json',
+				//helpers: 'templates/*.js',
+				partials: 'includes/*.handlebars',
+				globals: [{
+					textspec: {
+						'Greetings': 'Greetings Scrub!'
+					}
+				}]
+			}
+		},
+		sass: {
+			dev: {
+				options: {
+					style: 'expanded',
+					compass: false,
+					precision: 10,
+					sourcemap: 'none'
+				},
+				files: {
+					'<%= project.app %>css/style.css': '<%= project.css %>'
+				}
+			}
+		},
 		autoprefixer: {
 			dist: {
 				options: {
@@ -66,24 +85,27 @@ module.exports = function (grunt) {
 			options: {
 				// Start a live reload server on the default port 35729
 				livereload: true,
-    		},
-            sass: {
-                files: ['<%= project.app %>sass/{,*/}*.{scss,sass}'],
-                tasks: ['sass:dev','autoprefixer','cssmin:css']
-            },
-
-            html: {
-                files: ['<%= project.app %>{,*/}*.{html,css,js}'],
-            },
-            
-        }
-    });
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', 'Default task, compiles and minifies bootstrap CSS and JSS, copies files over AND runs the Watch task', ['sass:dev','autoprefixer','cssmin:css', 'uglify:js', 'copy:main','watch']);
-    grunt.registerTask('build', 'Build-only task, compiles SASS and minifies CSS/JS + copies files over to the production folder', ['sass:dev','autoprefixer','cssmin:css', 'uglify:js', 'copy:main']);
+			},
+			sass: {
+				files: ['<%= project.app %>sass/{,*/}*.{scss,sass}'],
+				tasks: ['sass:dev', 'autoprefixer', 'cssmin:css']
+			},
+			html: {
+				files: ['<%= project.app %>{,*/}*.{html,css,js}'],
+			},
+			handlebars: {
+				files: ['templates/{,*/}*.{handlebars,json}', 'includes/{,*/}*.handlebars'],
+				tasks: ['compile-handlebars:compile']				
+			}
+		}
+	});
+	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-compile-handlebars');
+	grunt.registerTask('default', 'Default task, compiles and minifies bootstrap CSS and JSS, copies files over AND runs the Watch task', ['compile-handlebars:compile', 'sass:dev', 'autoprefixer', 'cssmin:css', 'uglify:js', 'copy:main', 'watch']);
+	grunt.registerTask('build', 'Build-only task, compiles SASS and minifies CSS/JS + copies files over to the production folder', ['compile-handlebars:compile', 'sass:dev', 'autoprefixer', 'cssmin:css', 'uglify:js', 'copy:main']);
 };
