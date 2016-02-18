@@ -6,63 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Sample Optimized Landing Page</title><!-- CSS -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <title>Landing Page</title><!-- CSS -->
+    <link href="css/style.min.css" rel="stylesheet"/>
+    <style>
+	    /************************************************************************
+    Parallax
+************************************************************************/   
+    .jumbotron {
+    margin:5em auto 25em;
+    position: relative;
+    z-index: 10;
+    }
+
+    .parallax {
+    background: url(images/donut.png) center center no-repeat;
+    perspective:1px;
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+    }
+
+    .parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+    }
+
+    .parallax__layer {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    }
+
+    .parallax__layer--base {
+    background: url(images/donut.png) center center no-repeat;
+    transform:translateZ(0);
+    }
+
+    .parallax__layer--back {
+    background: url(images/donut.png) center center no-repeat;
+    transform:translateZ(-1px);
+    }
+
+	</style>
 </head>
 
 <body>
-    <!--[if lt IE 8]>
-                 <div role="alert" class="alert alert-warning text-center"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-</div>
-<![endif]-->
 
-    <header class="navbar navbar-static-top navbar-inverse" role="banner">
+    <header class="main" role="banner">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span></button> <a class="logo" href="/" title="Sorry Miss Jackson, I am for Real">Sorry Miss Jackson, I am for Real</a>
-            </div>
 
-            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">Home</a>
+          <nav role="navigation" class="navbar clearfix"> 
+			<a class="navbar-brand logo" href="/" title="Sorry Miss Jackson, I am for Real">Sorry Miss Jackson, I am for Real</a>                 
+              <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+			    &#9776;
+			  </button>
+			  <div class="collapse navbar-toggleable-xs " id="exCollapsingNavbar2">
+                <ul class="nav navbar-nav nav-pills pull-sm-right">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
                     </li>
 
-                    <li role="presentation" class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Examples</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Examples</a>
 
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="/example-2-columns.html">2 Column</a>
-                            </li>
-
-                            <li>
-                                <a href="/example-landing-page.html">Landing Page</a>
-                            </li>
-
-                            <li>
-                                <a href="/example-contact.html">Contact Page</a>
-                            </li>
-
-                            <li>
-                                <a href="/example-prettty.html">Parallax / Prettty</a>
-                            </li>
-                        </ul>
+                        <div class="dropdown-menu container" role="menu">
+                                <a href="/example-2-columns.html" class="dropdown-item">2 Column</a>
+                                <a href="/example-landing-page.html" class="dropdown-item">Landing Page</a>
+                                <a href="/example-prettty.html" class="dropdown-item">Parallax / Prettty</a>
+                        </div>
                     </li>
-
-                    <li>
-                        <a href="/support.html">Support</a>
+                    
+                    <li class="nav-item">
+	                    <a class="nav-link" href="/blog.html">Product
+	                    </a>
+                    </li>
+                    
+                    <li class="nav-item">
+	                    <a class="nav-link" href="/blog.html">Blog
+	                    </a>
+                    </li>
+                    
+                    <li class="nav-item">
+	                    <a class="nav-link" href="/contact.html">Contact
+	                    </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://github.com/pdemaria/bootstrap-starter" target="_blank" class="nav-link">Support</a>
                     </li>
                 </ul>
             </nav>
         </div>
-    </header><!--[if lt IE 8]>
-    <div role="alert" class="alert alert-warning text-center">
-        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    </div>
-    <![endif]-->
+    </header>
+    
+    <!-- container -->
     <!-- container -->
 
     <div class="container" role="main">
@@ -123,53 +163,31 @@
         </div><!-- /jumbotron -->
     </div><!-- /container -->
 
-    <footer class="main">
-        <!-- footer -->
-
-        <div class="container">
-            <ul class="socials pull-right">
-                <li>
-                    <a href="" class="sr-only-focusable">Google+</a>
-                </li>
-
-                <li>
-                    <a href="" class="sr-only-focusable">Facebook</a>
-                </li>
-
-                <li>
-                    <a href="" class="sr-only-focusable">Twitter</a>
-                </li>
-
-                <li>
-                    <a href="" class="sr-only-focusable">LinkedIn</a>
-                </li>
-            </ul>
-
-            <p class="small text-center">© Company 2014</p>
-        </div>
-    </footer><!-- /footer -->
-    <!-- forking -->
-    <a href="https://github.com/pdemaria/bootstrap-starter" class="hidden-xs"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1001;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a> <!-- /forking -->
-</body>
-</html>
-
-    
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/modernizr/modernizr.js"></script>
-<script src="js/webshims/js-webshim/minified/polyfiller.js"></script>
-<script src="js/jquery.cycle2.min/index.js"></script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="js/ie10-viewport-bug-workaround.js"></script>
-<script>
-// Initialize webshims
-webshims.setOptions('basePath', '/js/webshims/js-webshim/minified/shims/');
-webshims.setOptions('forms', {
-	addValidators: true
-});
-webshims.polyfill('forms');
-</script>
-</body>
-</html>
+  <footer class="main">
+         <!-- footer -->
+ 
+         <div class="container">
+             <p class="small text-center">© Company 2014</p>
+         </div>
+     </footer><!-- forking -->
+     <a href="https://github.com/pdemaria/bootstrap-starter"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1001;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" class="hidden-xs-down"></a> <!-- /forking -->
+ 
+ 	<!-- Bootstrap core JavaScript
+ 		================================================== -->
+     <!-- Placed at the end of the document so the pages load faster -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+ 	<script src="js/bootstrap.min.js"></script>
+ 	<script src="js/webshims/js-webshim/minified/polyfiller.js"></script>
+ 	<script src="js/jquery.cycle2.min/index.js"></script> 
+ 
+ <script>
+ // Initialize webshims
+     webshims.setOptions('basePath', '/js/webshims/js-webshim/minified/shims/');
+     webshims.setOptions('forms', {
+     addValidators: true
+     });
+     webshims.polyfill('forms');
+ </script>
+ <script src="//localhost:35729/livereload.js"></script>
+ </body>
+ </html>

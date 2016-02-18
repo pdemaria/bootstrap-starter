@@ -17,10 +17,10 @@
 }
 
 //** Nav
-header.navbar {
+header.main {
 	background: $header-bg-color $header-img $header-img-repeat $header-img-position;
 		@if $header-img-height != null {
-			min-height: $header-img-height;		
+			min-height: $header-img-height;
 		}
 }
 

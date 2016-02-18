@@ -53,7 +53,7 @@ source provision.sh && wordpress_install
   2. [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
   3. [Laravel/Homestead](https://github.com/laravel/homestead)
 
-You'll want to map your Local Site (however you prefer to set up your Virtual Hosts) to `bootstrap-starter/bootstrap-wp`. 
+Working with Wordpress you'll want to map your Local Site && Virtual Host (however you prefer to set up your Virtual Hosts) to `/bootstrap-starter/bootstrap-starter/bootstrap-wp`. 
 
 If all you need are the theme files (a baseline theme that you're going to extend), you can map your Local Site elsewhere and copy the generated theme files to wherever you need them to be.
 

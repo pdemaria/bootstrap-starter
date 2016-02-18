@@ -671,33 +671,6 @@ $pre-scrollable-max-height:   340px !default;
 //
 //##
 
-//** Header
-.logo {
-	@extend .navbar-brand;
-}
-
-.nav {
-	@extend .nav;
-	padding-top: 40px;
-	
-}
-
-.navbar-inverse .navbar-toggle {
-	background-color: #444444;
-}
-
-//** Body
-.wrapper {
-	@extend .container;
-	border: 0.5px dotted #EFEFEF;
-	background: #FFFFFF;
-	min-width: 320px;
-}
-
-[role="main"] {
-	@extend .container;
-	border-radius: 10px 10px 10px 10px;
-}
 
 //
 // Post-Bootstrap Template Variables - Adjust to adjust banner images and backgrounds, settup sprites, etc.
@@ -734,8 +707,8 @@ $header-img-width: null; // width
 
 //** Brand 
 $brand-img: url("../images/fat-nyan-cat.gif");
-$brand-img-height: 100px; // height
-$brand-img-width: 100px; // width
+$brand-img-height: 65px; // height
+$brand-img-width: 65px; // width
 
 //** Footer
 $footer-sticky: true; // sticky footer styles, bottom of the page even with no content
@@ -751,7 +724,10 @@ $footer-img-border: null; // borders
 //== Cycle2
 //
 //##
-
+.slide {
+	width: 100%;
+	height: 100%;
+}
 //== Mappy Maps
 //
 //##
@@ -762,3 +738,29 @@ $footer-img-border: null; // borders
 
 @import 'components/backgrounds';
 @import 'components/footers';
+
+@include media-breakpoint-down(xs) {
+.navbar-toggleable-xs {
+  clear: both;
+  background: #FFF;
+  border-radius: 3px;
+}
+
+.navbar-toggleable-xs .nav .nav-item {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+}
+
+.navbar-toggleable-xs .nav .nav-item.open .nav-link {
+  border-radius: 0 0 0 0;
+}
+
+.navbar-toggleable-xs .nav .nav-item.open .dropdown-menu {
+  position: relative;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  border-radius: 0 0 0 0;
+}
+}
