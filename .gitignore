@@ -42,3 +42,8 @@ bower_components/
 .sass-cache/
 node_modules/
 bootstrap-wp/
+bootstrap-starter/css/style.css
+
+bootstrap-starter/css/style.min.css
+
+bootstrap-starter/js/bootstrap.min.js

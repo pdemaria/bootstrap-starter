@@ -48,61 +48,40 @@ module.exports = function(grunt) {
 					'<%= project.app %>css/style.css': ['<%= project.app %>css/style.css']
 				}
 			}
-		},
-		cssmin: {
-			css: {
-				src: '<%= project.app %>css/style.css',
-				dest: '<%= project.app %>css/style.min.css'
-			}
-		},
-		uglify: {
-			options: {
-				banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */'
-			},
-			js: {
-				files: {
-					'<%= project.app %>js/bootstrap.min.js': ['<%= project.assets %>bootstrap-sass/assets/javascripts/bootstrap.js']
-				}
-			}
-		},
-		copy: {
+		}, 
+        cssmin: {
+            css: {
+                src: '<%= project.app %>css/style.css',
+                dest: '<%= project.app %>css/style.min.css'
+            }
+        },
+        uglify: {
+	        options: {
+				banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + 
+						'<%= grunt.template.today("yyyy-mm-dd") %> */'
+    	},
+            js: {
+                files: {
+                    '<%= project.app %>js/bootstrap.min.js': ['<%= project.assets %>bootstrap/dist/js/bootstrap.js']
+                }
+            }
+        },
+        copy: {
 			main: {
 				files: [
-				// Uncompressed CSS - This shouldn't be needed
-				//{expand: true, cwd: '<%= project.assets %>bootstrap-sass-official/assets/stylesheets/', src: ['bootstrap.css'],dest: '<%= project.app %>css/', filter: 'isFile'},
-				// Bootstrap Fonts
-				{
-					expand: true,
-					cwd: '<%= project.assets %>bootstrap-sass/assets/fonts/bootstrap/',
-					src: ['**/*'],
-					dest: '<%= project.app %>fonts/bootstrap/',
-					filter: 'isFile'
-				},
-				// JS
-				{
-					expand: true,
-					cwd: '<%= project.assets %>webshim/',
-					src: ['**/*'],
-					dest: '<%= project.app %>js/webshims/'
-				}, {
-					expand: true,
-					cwd: '<%= project.assets %>modernizr/',
-					src: ['**/*'],
-					dest: '<%= project.app %>js/modernizr/'
-				}, {
-					expand: true,
-					cwd: '<%= project.assets %>jquery.cycle2.min/',
-					src: ['**/*'],
-					dest: '<%= project.app %>js/jquery.cycle2.min/'
-				}, {
-					expand: true,
-					cwd: '<%= project.assets %>jquery-migrate/',
-					src: ['**/*'],
-					dest: '<%= project.app %>js/jquery-migrate/'
-				}]
-			}
-		},
-		watch: {
+					// Uncompressed CSS - This shouldn't be needed
+					//{expand: true, cwd: '<%= project.assets %>bootstrap-sass-official/assets/stylesheets/', src: ['bootstrap.css'],dest: '<%= project.app %>css/', filter: 'isFile'},
+					
+					// Bootstrap Fonts
+					{expand: true, cwd: '<%= project.assets %>font-awesome/', src: ['**/*'], dest: '<%= project.app %>fonts/font-awesome/', filter: 'isFile'},
+					// JS
+					{expand: true, cwd: '<%= project.assets %>webshim/', src: ['**/*'], dest: '<%= project.app %>js/webshims/'},
+					{expand: true, cwd: '<%= project.assets %>jquery.cycle2.min/', src: ['**/*'], dest: '<%= project.app %>js/jquery.cycle2.min/'},
+					{expand: true, cwd: '<%= project.assets %>jquery-migrate/', src: ['**/*'], dest: '<%= project.app %>js/jquery-migrate/'}
+				]
+	    	}
+	    },
+        watch: {
 			options: {
 				// Start a live reload server on the default port 35729
 				livereload: true,
