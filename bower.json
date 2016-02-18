@@ -26,7 +26,8 @@
     "jquery.cycle2.min": "https://raw.github.com/malsup/malsup.github.com/master/min/jquery.cycle2.min.js",
     "webshim": "~1.15.5",
     "jquery-migrate": "~1.2.1",
-    "bootstrap-sass": "~3.3.4"
+    "bootstrap": "v4.0.0-alpha.2",
+    "font-awesome": "fontawesome#^4.5.0"
   },
   "devDependencies": {}
 }
