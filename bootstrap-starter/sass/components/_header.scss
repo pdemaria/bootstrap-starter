@@ -1,5 +1,5 @@
 //
-// Backgrounds
+// Main Navigation
 // --------------------------------------------------
 
 //** Logo
@@ -25,18 +25,31 @@ header.main {
 	
 }
 
-//** Main content
-#content {
-	padding-top: 1.75rem;
+@include media-breakpoint-down(xs) {
+.navbar-toggleable-xs {
+  clear: both;
+  background: #FFF;
+  border-radius: 3px;
 }
 
-//** Footer
-footer.main {
-	background: $footer-bg-color $footer-img $footer-img-repeat $footer-img-position;		
-	.container {
-		@if $footer-height != null {
-			min-height: $footer-height;		
-		}
-	}	
+.navbar-toggleable-xs .nav .nav-item {
+  display: block;
+  width: 100%;
+  margin-left: auto;
 }
+
+.navbar-toggleable-xs .nav .nav-item.open .nav-link {
+  border-radius: 0 0 0 0;
+}
+
+.navbar-toggleable-xs .nav .nav-item.open .dropdown-menu {
+  position: relative;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  border-radius: 0 0 0 0;
+}
+}
+
+
 

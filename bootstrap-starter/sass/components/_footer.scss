@@ -1,0 +1,14 @@
+//
+// Footer Styles
+// --------------------------------------------------
+footer.main {
+	background: $footer-bg-color $footer-img $footer-img-repeat $footer-img-position;		
+	.container {
+		padding: 1rem;
+		color: $footer-text;
+		@if $footer-height != null {
+			min-height: $footer-height;		
+		}
+	}	
+}
+

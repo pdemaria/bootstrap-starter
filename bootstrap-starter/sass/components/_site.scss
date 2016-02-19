@@ -1,0 +1,91 @@
+
+
+//
+// Post-Bootstrap Site Variables - Adjust to adjust banner images and backgrounds, settup sprites, etc.
+// --------------------------------------------------
+
+//== Backgrounds
+//
+//##
+
+//** Body
+$body-img: null; // img? color? both? wrapper only?
+$body-img-repeat: null; // x, y or none
+$body-img-position: null; // background position
+$body-img-border: null; // borders
+
+//** Header
+$header-bg-color: linear-gradient(to bottom, rgba(238,238,238,0.9) 0%,rgba(238,238,238,1) 100%);
+$header-img: null; // img? color? both? wrapper only?
+$header-img-repeat: null; // x, y or none
+$header-img-position: null; // background position
+$header-img-border: null; // borders
+$header-img-height: null; // height
+$header-img-width: null; // width
+
+//** Brand 
+$brand-img: url("../images/fat-nyan-cat.gif");
+$brand-img-height: 65px; // height
+$brand-img-width: 65px; // width
+
+//** Footer
+$footer-sticky: true; // sticky footer styles, bottom of the page even with no content
+$footer-margin-top: 20px; // footer margin-top
+$footer-bg-color: linear-gradient(to bottom, #28343b 0%,#000000 100%); // footer bg color
+$footer-text: #EFEFEF;
+$footer-height: null;
+$footer-img: null; // img? color? both? wrapper only?
+$footer-img-repeat: null; // x, y or none
+$footer-img-position: null; // background position
+$footer-img-border: null; // borders
+
+
+//== Containers
+//
+//##
+html {
+	position:relative;
+	min-height:100%;
+}
+	
+.wrapper {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+//** Main content
+#content {
+	padding-top: 1.75rem;
+}
+
+//== Navigation
+//
+//##
+@import 'header';
+@import 'footer';
+
+//== Parallax
+@import 'parallax';
+
+//== Cycle2
+//
+//##
+.slide {
+	width: 100%;
+	height: 100%;
+}
+
+//== Mappy Maps
+//
+//##
+
+
+//== Sprites
+//
+//##
+
+
+
+

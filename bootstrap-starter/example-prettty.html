@@ -9,50 +9,7 @@
     <title>Parallax</title><!-- CSS -->
     <link href="css/style.min.css" rel="stylesheet"/>
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
-    <style>
-	    /************************************************************************
-    Parallax
-************************************************************************/   
-    .jumbotron {
-    margin:5em auto 25em;
-    position: relative;
-    z-index: 10;
-    }
-
-    .parallax {
-    background: url(images/donut.png) center center no-repeat;
-    perspective:1px;
-    height:100vh;
-    overflow-x:hidden;
-    overflow-y:auto;
-    }
-
-    .parallax__group {
-    position: relative;
-    height: 100vh;
-    transform-style: preserve-3d;
-    }
-
-    .parallax__layer {
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    }
-
-    .parallax__layer--base {
-    background: url(images/donut.png) center center no-repeat;
-    transform:translateZ(0);
-    }
-
-    .parallax__layer--back {
-    background: url(images/donut.png) center center no-repeat;
-    transform:translateZ(-1px);
-    }
-
-	</style>
-</head>
+ </head>
 
 <body>
 
