@@ -11,24 +11,22 @@
 	
 	body {
 	/* Margin bottom by footer height */
-		margin-bottom:$footer-height + $footer-margin-top;
+		// margin-bottom:$footer-height + $footer-margin-top;
 	}
 	
 	footer.main {
-		position:absolute;
-		bottom:0;
+		// position:absolute;
+		// bottom:0;
 	}	
 }
 
 //** Generic Footer Styles
 footer.main {
 	width:100%;
-	height:$footer-height;
 	background-color: $footer-bg-color;
 	
 	.container {
-		height:$footer-height;
-		padding: $footer-height * 0.1;
+		padding: 1rem;
 		color: $footer-text;
 	}
 }	

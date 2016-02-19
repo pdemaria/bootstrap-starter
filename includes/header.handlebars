@@ -8,6 +8,7 @@
 
     <title>{{title}}</title><!-- CSS -->
     <link href="css/style.min.css" rel="stylesheet"/>
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
     <style>
 	    /************************************************************************
     Parallax
@@ -56,9 +57,50 @@
 <body>
 
     <header class="main" role="banner">
-        <div class="container">
+	    
+	    <div class="container">
+					<div class="nav navbar-text">
+										<div class="breaking-news">
+                           <h3>Trending:</h3> <a title="" href="http://www.41nbc.com/2016/02/18/jade-is-your-cat-of-the-week/">Jade is your Cat of the Week...</a>
+                           <a class="btn btn-default" title="Jade is your Cat of the Week..." href="http://www.41nbc.com/2016/02/18/jade-is-your-cat-of-the-week/" style="display:none;"><i class="fa fa-angle-right"></i><span class="sr-only">Read More</span></a>
+					</div>
+					
+										</div>
+					<ul class="nav navbar-nav navbar-right">
+                        <li class="lnk lnk-login"><a href="http://www.41nbc.com/41/wp-login.php?redirect_to=%2F" class="simplemodal-login" rel="nofollow">Log in</a></li>
+                        <li class="lnk lnk-register">
+	                        		                        <a class="simplemodal-register" href="http://www.41nbc.com/41/wp-login.php?action=register">Register</a>
+		                     
+                        </li>
+                    </ul>
+                    <form role="search" class="navbar-form navbar-right" target="_top" method="get" action="/search-results">
+	                    <div class="input-group">
+		                    <label for="q" class="sr-only">Enter your search terms</label> 
+	                        <label for="sbb" class="sr-only">Submit search form</label> 
+		                    <input type="text" class="form-control" placeholder="Search" maxlength="255" size="25" name="q">
+		                    <span class="input-group-btn">
+	                        <button name="sa" class="btn btn-secondary text-muted" id="sbb" value="" type="submit"><span class="fa fa-search"></span></button>
+		                    </span>
+	                    </div>	                        
+                    </form>
+                    
+					<ul class="nav navbar-right navbar-text social">
+                        <li>
+                            <a href="http://www.facebook.com/41NBC" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com/41nbc" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+						<li>
+                            <a href="http://www.youtube.com/41NBC" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+                        </li>
+					</ul>
+				</div>
+				
 
           <nav role="navigation" class="navbar clearfix"> 
+	                  <div class="container">
+
 			<a class="navbar-brand logo" href="/" title="Sorry Miss Jackson, I am for Real">Sorry Miss Jackson, I am for Real</a>                 
               <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
 			    &#9776;
@@ -98,8 +140,9 @@
                         <a href="https://github.com/pdemaria/bootstrap-starter" target="_blank" class="nav-link">Support</a>
                     </li>
                 </ul>
+                        </div>
             </nav>
-        </div>
     </header>
     
     <!-- container -->
+    <div id="content" role="main">
