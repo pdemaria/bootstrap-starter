@@ -14,23 +14,32 @@
 <body>
 
     <header class="main" role="banner">
-	    
-	    <div class="container">
-					<div class="nav navbar-text">
-										<div class="breaking-news">
-                           <h3>Trending:</h3> <a title="" href="http://www.41nbc.com/2016/02/18/jade-is-your-cat-of-the-week/">Jade is your Cat of the Week...</a>
-                           <a class="btn btn-default" title="Jade is your Cat of the Week..." href="http://www.41nbc.com/2016/02/18/jade-is-your-cat-of-the-week/" style="display:none;"><i class="fa fa-angle-right"></i><span class="sr-only">Read More</span></a>
-					</div>
+	    <nav role="navigation" class="navbar clearfix"> 
+	    	<div class="container">
+						<div class="breaking-news">
+                           <h3>Trending:</h3> <a title="" href="/post.html">Jade is your Cat of the Week...</a>
+      					</div>
 					
-										</div>
-					<ul class="nav navbar-nav navbar-right">
-                        <li class="lnk lnk-login"><a href="http://www.41nbc.com/41/wp-login.php?redirect_to=%2F" class="simplemodal-login" rel="nofollow">Log in</a></li>
-                        <li class="lnk lnk-register">
-	                        		                        <a class="simplemodal-register" href="http://www.41nbc.com/41/wp-login.php?action=register">Register</a>
-		                     
+					<ul class="list-inline pull-sm-right social">
+                        <li class="list-inline-item">
+                            <a href="http://www.facebook.com/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
                         </li>
-                    </ul>
-                    <form role="search" class="navbar-form navbar-right" target="_top" method="get" action="/search-results">
+                        <li class="list-inline-item">
+                            <a href="http://twitter.com/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+						<li class="list-inline-item">
+                            <a href="http://www.youtube.com/" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        
+                        <li class="list-inline-item lnk-login">
+	                        <a href="/login.html" class="lnk-login" rel="nofollow">Log in</a>
+	                    </li>
+                        <li class="list-inline-item lnk-register">
+	                        <a class="simplemodal-register" href="/register.html">Register</a>
+                        </li>
+					</ul>
+					
+					<form role="search" class="form-inline pull-sm-right" target="_top" method="get" action="/search-results">
 	                    <div class="input-group">
 		                    <label for="q" class="sr-only">Enter your search terms</label> 
 	                        <label for="sbb" class="sr-only">Submit search form</label> 
@@ -39,21 +48,9 @@
 	                        <button name="sa" class="btn btn-secondary text-muted" id="sbb" value="" type="submit"><span class="fa fa-search"></span></button>
 		                    </span>
 	                    </div>	                        
-                    </form>
-                    
-					<ul class="nav navbar-right navbar-text social">
-                        <li>
-                            <a href="http://www.facebook.com/41NBC" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com/41nbc" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                        </li>
-						<li>
-                            <a href="http://www.youtube.com/41NBC" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
-                        </li>
-					</ul>
-				</div>
-				
+                    </form>		
+			</div>
+	    </nav>	
 
           <nav role="navigation" class="navbar clearfix"> 
 	                  <div class="container">
@@ -79,7 +76,7 @@
                     </li>
                     
                     <li class="nav-item">
-	                    <a class="nav-link" href="/blog.html">Product
+	                    <a class="nav-link" href="/products.html">Our Product
 	                    </a>
                     </li>
                     
@@ -103,6 +100,16 @@
     
     <!-- container -->
     <div id="content" role="main">
+	<div class="container">  
+		<div class="row">
+			<div class="col-xs-12">  
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li class="active">Current Page</li>
+			</ol>
+			</div>
+		</div>
+	</div>
     <!-- container -->
    <div class="slide-nav">
         <div data-cycle-timeout="7000" data-cycle-slides="> .slide" data-cycle-pause-on-hover="true" data-cycle-fx="fade" data-cycle-auto-height="16:9" class="slides cycle-slideshow">
@@ -438,6 +445,7 @@
 		================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	<script src="js/tether/js/tether.min.js"></script> 
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/webshims/js-webshim/minified/polyfiller.js"></script>
 	<script src="js/jquery.cycle2.min/index.js"></script> 
