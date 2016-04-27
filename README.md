@@ -42,14 +42,20 @@ bower install
 ```
 
 ##Wordpress
-Wordpress is not installed by default, the below does require you use [laravel/homestead](https://github.com/laravel/homestead), but if you aren't into that you can fork this thing and make edits to the provisioning script to user your own VM/Local Development goodies. The following will walk through installing wordpress via the command line
+Wordpress is not installed by default, the below does require you use [laravel/homestead](https://github.com/laravel/homestead), but if you aren't into that you can fork this thing and make edits to the provisioning script to user your own VM/Local Development goodies. The following will walk through installing wordpress via the command line, `cd bootstrap-starter/provision` and run the following command:
 
-```
-# Followed by the Initial Wordpress Install
+``` bash
+# Initial Wordpress Install
 source provision.sh && wordpress_install
 ```
+###Requires:
+  1. [./WP-CLI](http://wp-cli.org/)
+  2. [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+  3. [Laravel/Homestead](https://github.com/laravel/homestead)
 
-You'll want to map your Local Site (however you prefer to set up your Virtual Hosts) to bootstrap-starter/bootstrap-wp
+Working with Wordpress you'll want to map your Local Site && Virtual Host (however you prefer to set up your Virtual Hosts) to `/bootstrap-starter/bootstrap-starter/bootstrap-wp`. 
+
+If all you need are the theme files (a baseline theme that you're going to extend), you can map your Local Site elsewhere and copy the generated theme files to wherever you need them to be.
 
 ##Maintenance
 From time to time you're going to find that things aren't quite working right, usually this is because the things are out of date!

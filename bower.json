@@ -27,7 +27,9 @@
     "webshim": "~1.15.5",
     "jquery-migrate": "~1.2.1",
     "bootstrap": "v4.0.0-alpha.2",
-    "font-awesome": "fontawesome#^4.5.0"
+    "font-awesome": "fontawesome#^4.5.0",
+    "tether": "^1.2.0",
+    "picturefill": "^3.0.2"
   },
   "devDependencies": {}
 }
