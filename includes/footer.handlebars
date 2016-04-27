@@ -5,64 +5,43 @@
 
         <div class="container">
 	        <div class="row">
-		        <div class="col-sm-4 col-xs-6">
+		        <div class="col-md-4 col-sm-6 col-xs-12">
 			    <h4>About</h4>
 
                 <address>
-                    <strong>Twitter, Inc.</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
+                    <strong>Random, Inc.</strong><br>
+                    201 Front Street, Suite 601<br>
+                    New York, NY 1234<br>
                     <abbr title="Phone">P:</abbr> (123) 456-7890
                 </address>
 
                 <address>
                     <strong>Full Name</strong><br>
-                    <a href="mailto:#">first.last@example.com</a>
+                    <a href="mailto:#">info@random.com</a>
                 </address>
+                
+                <p>Display font by: <cite><a href="http://www.yoworks.com/">YOWorks</a></cite></p>
 
+				<hr class="hidden-sm-up">
 		        </div>
-		        <div class="col-sm-4 col-xs-6">
-			        <h4>Posts</h4>
-			        <div class="post-excerpts">
-			          <div class="row blog-post">
-				          <figure class="col-xs-3 p-x-0"><img class="img-fluid" src="/images/women-working-on-vengeance-dive-bomber-TN-1943.jpg" alt="Women working on Vengeance dive bomber, TN 1943"></figure>
-				        <div class="col-xs-9">
-					        			            <p class="blog-post-meta">January 1, 2014</p>
-			            <h5 class="blog-post-title"><a href="/post.html">Sample blog post</a></h5>
-				        </div>
+		        <div class="col-md-4 col-sm-6 col-xs-12">
+			        <h4>Recent Posts</h4>
+			        <div class="post-excerpts small">
+			          <div class="post">
+    			            <h6 class="blog-post-title"><a href="/post.html">Selfies man braid ethical ramps chia, synth flexitarian</a></h6>
+    			            <span class="blog-post-meta">January 1, 2014</span>
 			          </div><!-- /.blog-post -->     
-			
-			
-			          <div class="row blog-post">
-				          <figure class="col-xs-3 p-x-0"><img class="img-fluid" src="/images/women-working-on-vengeance-dive-bomber-TN-1943.jpg" alt="Women working on Vengeance dive bomber, TN 1943"></figure>
-				        <div class="col-xs-9">
-					        			            <p class="blog-post-meta">January 1, 2014</p>
-			            <h5 class="blog-post-title"><a href="/post.html">Sample blog post</a></h5>
-				        </div>
+			          <div class="post">
+    			            <h6 class="blog-post-title"><a href="/post.html">Selfies man braid ethical ramps chia, synth flexitarian</a></h6>
+    			            <span class="blog-post-meta">January 1, 2014</span>
 			          </div><!-- /.blog-post -->     
-			          
-			
-			         <div class="row blog-post">
-				          <figure class="col-xs-3 p-x-0"><img class="img-fluid" src="/images/women-working-on-vengeance-dive-bomber-TN-1943.jpg" alt="Women working on Vengeance dive bomber, TN 1943"></figure>
-				        <div class="col-xs-9">
-					        			            <p class="blog-post-meta">January 1, 2014</p>
-			            <h5 class="blog-post-title"><a href="/post.html">Sample blog post</a></h5>
-				        </div>
-			          </div><!-- /.blog-post -->     
- 
-			          
-			
-					 <div class="row blog-post">
-				          <figure class="col-xs-3 p-x-0"><img class="img-fluid" src="/images/women-working-on-vengeance-dive-bomber-TN-1943.jpg" alt="Women working on Vengeance dive bomber, TN 1943"></figure>
-				        <div class="col-xs-9">
-					        			            <p class="blog-post-meta">January 1, 2014</p>
-			            <h5 class="blog-post-title"><a href="/post.html">Sample blog post</a></h5>
-				        </div>
-			          </div><!-- /.blog-post -->     
-           
+			          <div class="post">
+    			            <h6 class="blog-post-title"><a href="/post.html">Selfies man braid ethical ramps chia, synth flexitarian</a></h6>
+    			            <span class="blog-post-meta">January 1, 2014</span>
+			          </div><!-- /.blog-post -->      
 			        </div>
 		        </div>
-		        <div class="col-sm-4">
+		        <div class="col-md-4 col-sm-12 text-sm-right text-xs-center">
 			            <h3>Social Media</h3>
 			            <ul class="social list-inline">
                             <li class="list-inline-item">
@@ -103,7 +82,7 @@
 		        </div>
 		       
 				<nav role="navigation" class="text-xs-center">
-						<p><small>Copyright © 2016 - 2016, Widget Inc. All Rights Reserved.</small></p>
+						<p><small>Copyright © 2016 - 2016, Random Inc. All Rights Reserved.</small></p>
 						<ul class="list-inline small">
 							<li class="list-inline-item"><a href="#">Terms of Service</a></li>
 							<li class="list-inline-item"><a href="#">Privacy Policy</a></li>
@@ -120,6 +99,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 	<script src="js/tether/js/tether.min.js"></script> 
+	<script src="js/picturefill/picturefill.min.js"></script> 
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/webshims/js-webshim/minified/polyfiller.js"></script>
 	<script src="js/jquery.cycle2.min/index.js"></script> 
@@ -133,5 +113,79 @@
     webshims.polyfill('forms');
 </script>
 <script src="//localhost:35729/livereload.js"></script>
+
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signinLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h4 class="modal-title" id="signinLabel">Please sign in</h4>
+    </div>
+    <div class="modal-body">
+<form class="form-signin">
+	<div class="form-group">
+    <label class="sr-only" for="inputUsername">Username</label>
+    <input type="text" autofocus="" required="" placeholder="Username" class="form-control" id="inputUsername">
+	</div>
+	<div class="form-group">
+    <label class="sr-only" for="inputPassword">Password</label>
+    <input type="password" required="" placeholder="Password" class="form-control" id="inputPassword">
+	</div>
+    <div class="checkbox">
+      <label class="c-input c-checkbox">
+        <input type="checkbox" value="remember-me">
+          <span class="c-indicator"></span>
+           Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-lg btn-info btn-block">Sign in</button>
+  </form>
+  </div>
+   
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h4 class="modal-title" id="signinLabel">Please Register</h4>
+    </div>
+    <div class="modal-body">
+<form class="form-signin">
+	<div class="form-group">
+    <label class="sr-only" for="inputUsername">Username</label>
+    <input type="text" autofocus="" required="" placeholder="Username" class="form-control" id="inputUsername">
+	</div>
+	<div class="form-group">
+    <label class="sr-only" for="inputPassword">Password</label>
+    <input type="password" required="" placeholder="Password" class="form-control" id="inputPassword">
+	</div>
+		<div class="form-group">
+    <label class="sr-only" for="inputPassword">Confirm Password</label>
+    <input type="password" required="" placeholder="Confirm Password" class="form-control" id="confirmInputPassword" data-dependent-validation="inputPassword"  data-errormessage="You'll need to confirm your password!">
+	</div>
+    <div class="checkbox">
+      <label class="c-input c-checkbox">
+        <input type="checkbox" value="remember-me">
+          <span class="c-indicator"></span>
+           Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-lg btn-success btn-block">Register</button>
+  </form>
+  </div>
+   
+  </div>
+</div>
+</div>
+
+
 </body>
 </html>

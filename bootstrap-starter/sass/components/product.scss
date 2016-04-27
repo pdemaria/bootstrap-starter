@@ -18,3 +18,7 @@
 	}
 	
 }
+
+.btn-buy-now {
+  @include button-variant(#FFFFFF, #FC4444, #FC4444);
+}

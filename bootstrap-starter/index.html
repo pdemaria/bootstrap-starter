@@ -16,41 +16,49 @@
     <header class="main" role="banner">
 	    <nav role="navigation" class="navbar clearfix"> 
 	    	<div class="container">
-						<div class="breaking-news">
-                           <h3>Trending:</h3> <a title="" href="/post.html">Jade is your Cat of the Week...</a>
-      					</div>
-					
-					<ul class="list-inline pull-sm-right">
-                        <li class="list-inline-item">
-	                        <a href="/login.html" class="btn btn-secondary lnk-login" rel="nofollow">Log in</a>
+		    	<div class="row">			    	
+					<div class="col-sm-4 col-xs-12 breaking-news">
+						<ul class="nav navbar-nav nav-pills">
+							<li class="nav-item">
+							<a title="" href="/post.html" class="nav-link"><strong>Trending:</strong> Jade is your Cat of the Week...</a>
+						</li>
+						</ul>
+  					</div>
+  					<div class="col-sm-8 col-xs-12">
+					<ul class="nav navbar-nav nav-pills pull-sm-right">
+                       
+                        <li class="nav-item">
+                            <a href="http://www.facebook.com/" target="_blank" class="nav-link facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://twitter.com/" target="_blank" class="nav-link twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+						<li class="nav-item">
+                            <a href="http://www.youtube.com/" target="_blank" class="nav-link youtube"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        
+	   					<li class="nav-item">
+						<form role="search" class="form-inline pull-sm-right" target="_top" method="get" action="/search-results">
+		                    <div class="input-group">
+			                    <label for="q" class="sr-only">Enter your search terms</label> 
+		                        <label for="sbb" class="sr-only">Submit search form</label> 
+			                    <input type="text" class="form-control" placeholder="Search" maxlength="255" size="25" name="q">
+			                    <span class="input-group-btn">
+		                        <button name="sa" class="btn btn-secondary text-muted" id="sbb" value="" type="submit"><span class="fa fa-search"></span></button>
+			                    </span>
+		                    </div>	                        
+	                    </form>		
+	   					</li>
+	                        
+                        <li class="nav-item">
+	                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#signInModal" >Log in</button>
 	                    </li>
-                        <li class="list-inline-item">
-	                        <a class="lnk-register btn btn-secondary" href="/register.html">Register</a>
+                        <li class="nav-item">
+	                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#registerModal" >Register</button>
                         </li>
 					</ul>
-					
-					<form role="search" class="form-inline pull-sm-right" target="_top" method="get" action="/search-results">
-	                    <div class="input-group">
-		                    <label for="q" class="sr-only">Enter your search terms</label> 
-	                        <label for="sbb" class="sr-only">Submit search form</label> 
-		                    <input type="text" class="form-control" placeholder="Search" maxlength="255" size="25" name="q">
-		                    <span class="input-group-btn">
-	                        <button name="sa" class="btn btn-secondary text-muted" id="sbb" value="" type="submit"><span class="fa fa-search"></span></button>
-		                    </span>
-	                    </div>	                        
-                    </form>		
-					
-					<ul class="list-inline pull-sm-right social">
-                        <li class="list-inline-item">
-                            <a href="http://www.facebook.com/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="http://twitter.com/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                        </li>
-						<li class="list-inline-item">
-                            <a href="http://www.youtube.com/" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
-                        </li>
-					</ul>
+  					</div>
+		    	</div>
 			</div>
 	    </nav>	
 
@@ -95,236 +103,95 @@
                     <li class="nav-item">
                         <a href="https://github.com/pdemaria/bootstrap-starter" target="_blank" class="nav-link">Support</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="cart.html" target="_blank" class="nav-link"><i class="fa fa-shopping-basket"></i>
+</a>
+                    </li>
                 </ul>
                         </div>
             </nav>
     </header>
-    
-    <!-- container -->
-    <div id="content" role="main">
-	<div class="container">  
-		<div class="row">
-			<div class="col-xs-12">  
-			<ol class="breadcrumb">
-				<li><a href="#">Home</a></li>
-				<li class="active">Current Page</li>
-			</ol>
-			</div>
-		</div>
-	</div>
     <!-- container -->
    <div class="slide-nav">
-        <div data-cycle-timeout="7000" data-cycle-slides="> .slide" data-cycle-pause-on-hover="true" data-cycle-fx="fade" data-cycle-auto-height="16:9" class="slides cycle-slideshow">
-	        <div class="slide" style="background: url(http://www.bootstrap-starter.com/images/The-Library-of-Congress-Rough_sea_Bognor_England-c_1890.jpg) 50% 50% no-repeat; background-size: cover">
-	        </div>
-	        <div class="slide" style="background: url(http://www.bootstrap-starter.com/images/The-Library-of-Congress-Rough_sea_Bognor_England-c_1890.jpg) 50% 50% no-repeat; background-size: cover"></div>
-	        <div class="slide" style="background: url(http://www.bootstrap-starter.com/images/The-Library-of-Congress-Rough_sea_Bognor_England-c_1890.jpg) 50% 50% no-repeat; background-size: cover"></div>
+        <div data-cycle-timeout="7000" data-cycle-slides="> .slide" data-cycle-pause-on-hover="true" data-cycle-fx="fade" data-cycle-auto-height="4:3" class="slides cycle-slideshow">
+	        <figure class="slide">
+		        <picture>
+			          <!--[if IE 9]><video style="display: none;"><![endif]-->
+				  <source srcset="http://www.bootstrap-starter.com/images/klein-bonaire.jpg" media="(min-width: 1000px)">
+				  <source srcset="http://www.bootstrap-starter.com/images/klein-bonaire-medium.jpg" media="(min-width: 800px)">
+				    <!--[if IE 9]></video><![endif]-->
+				  <img srcset="http://www.bootstrap-starter.com/images/klein-bonaire-small.jpg" alt="Klein Bonaire by Daniel Eynis">
+				</picture>
+				<div class="overlay lead">
+					<h1 class="display-2">Wayfarers mustache butcher</h1>
+					 <p>Celiac affogato. Trust fund +1 next level wayfarers cornhole flexitarian tumblr locavore. <br>Pickled meh cred, brunch gochujang semiotics drinking vinegar DIY direct trade occupy church-key beard pitchfork 90's.</p>
+				</div>
+		        <figcaption class="citation" style="padding: 1em; margin-bottom: 1em; border: 1px; background-color: #eee; width: 65%;">"<a href="https://www.flickr.com/photos/danieleynis/25188633305/" class="external text" rel="nofollow">Klein Bonaire</a>" by <a href="https://www.flickr.com/photos/danieleynis/" class="external text" rel="nofollow">Daniel Eynis</a> is licensed under <a href="http://creativecommons.org/licenses/by/2.0/" class="external text" rel="nofollow">CC BY 2.0</a></figcaption>
+		        
+		        
+	        </figure>
+	        <figure class="slide">
+		         <picture>
+			           <!--[if IE 9]><video style="display: none;"><![endif]-->
+				  <source srcset="http://www.bootstrap-starter.com/images/wannenkopfhutte-at-night.jpg" media="(min-width: 1000px)">
+				  <source srcset="http://www.bootstrap-starter.com/images/wannenkopfhutte-at-night-medium.jpg" media="(min-width: 800px)">
+				    <!--[if IE 9]></video><![endif]-->
+				  <img srcset="http://www.bootstrap-starter.com/images/wannenkopfhutte-at-night-small.jpg" alt="Wannenkopfhütte At Night by Markus Trienke">
+				</picture>
+				<div class="overlay lead">
+					<h1 class="display-2"> Trust fund +1</h1>
+					 <p>Next level wayfarers cornhole flexitarian tumblr locavore. <br>Drinking vinegar DIY direct trade occupy church-key beard pitchfork 90's.</p>
+				</div>
+		        <figcaption class="citation" style="padding: 1em; margin-bottom: 1em; border: 1px; background-color: #eee; width: 65%;">"<a href="https://www.flickr.com/photos/mtrienke/24273182623/" class="external text" rel="nofollow">Wannenkopfhütte At Night</a>" by <a href="https://www.flickr.com/photos/mtrienke/" class="external text" rel="nofollow">Markus Trienke</a> is licensed under <a href="http://creativecommons.org/licenses/by/2.0/" class="external text" rel="nofollow">CC BY 2.0</a></figcaption>
+
+	        </figure>
+	
         </div>
     </div>
 
     <div class="wrapper container" role="main">
         <!-- row -->
         <div class="row">
-            <div class="col-md-12">
-                <div class="row text-center">
-                   
-                    <div class="col-sm-4">
+            <div class="col-md-12 p-x-3">
+               
+               <h2 class="display-4 p-t-3 text-xs-center">Hammock Master</h2>
+               <hr class="m-x-2">
+                <div class="row text-xs-center">
+                    <div class="col-sm-4 p-a-3">
                             <img src="images/norge-chica.jpg" alt="..." class="img-circle">
 
                             <div class="caption">
-                                <h3>Thumbnail label</h3>
+                                <h3>Portland Williamsburg</h3>
 
-                                <p>Nullam quis risus eget urna mollis ornare vel eu leo. </p>
+                                <p>Fixie vinyl cold-pressed salvia tattooed selfies. </p>
 
                             </div>
                     </div>
-                     <div class="col-sm-4">
+                     <div class="col-sm-4 p-a-3">
                             <img src="images/norge-chica.jpg" alt="..." class="img-circle">
 
                             <div class="caption">
-                                <h3>Thumbnail label</h3>
+                                <h3>Sartorial sustainable</h3>
 
-                                <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                                <p>Wolf yuccie celiac, messenger bag normcore offal scenester street art flannel bushwick waistcoat.</p>
 
                             </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 p-a-3">
                             <img src="images/norge-chica.jpg" alt="..." class="img-circle">
 
                             <div class="caption">
-                                <h3>Thumbnail label</h3>
+                                <h3>Selfies</h3>
 
-                                <p>Nullam quis risus eget urna mollis ornare vel eu leo. </p>
+                                <p>Selfies man braid ethical ramps chia, synth flexitarian flannel food truck sriracha mlkshk occupy.</p>
 
                             </div>
                     </div>
-                    
-                </div>
-                
-                               <h1 class="page-header">The Everything</h1>
-
-                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-
-                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-
-                <h2>Headers</h2>
-
-                <h1>h1. Bootstrap heading</h1>
-
-                <h2>h2. Bootstrap heading</h2>
-
-                <h3>h3. Bootstrap heading</h3>
-
-                <h4>h4. Bootstrap heading</h4>
-
-                <h5>h5. Bootstrap heading</h5>
-
-                <h6>h6. Bootstrap heading</h6>
-
-                <h2>Example Grid: Mobile, tablet, desktops</h2>
-
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-8">
-                        .col-xs-12 .col-sm-6 .col-md-8
-                    </div>
-
-                    <div class="col-xs-6 col-md-4">
-                        .col-xs-6 .col-md-4
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-6 col-sm-4">
-                        .col-xs-6 .col-sm-4
-                    </div>
-
-                    <div class="col-xs-6 col-sm-4">
-                        .col-xs-6 .col-sm-4
-                    </div><!-- Optional: clear the XS cols if their content doesn't match in height -->
-
-                    <div class="clearfix visible-xs-block"></div>
-
-                    <div class="col-xs-6 col-sm-4">
-                        .col-xs-6 .col-sm-4
-                    </div>
-                </div>
-
-                <h2>Unordered Lists</h2>
-
-                <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-
-                    <li>Consectetur adipiscing elit</li>
-
-                    <li>Integer molestie lorem at massa</li>
-
-                    <li>Facilisis in pretium nisl aliquet</li>
-
-                    <li>Nulla volutpat aliquam velit
-
-                        <ul>
-                            <li>Phasellus iaculis neque</li>
-
-                            <li>Purus sodales ultricies</li>
-
-                            <li>Vestibulum laoreet porttitor sem</li>
-
-                            <li>Ac tristique libero volutpat at</li>
-                        </ul>
-                    </li>
-
-                    <li>Faucibus porta lacus fringilla vel</li>
-
-                    <li>Aenean sit amet erat nunc</li>
-
-                    <li>Eget porttitor lorem</li>
-                </ul>
-
-                <h2>Ordered Lists</h2>
-
-                <ol>
-                    <li>Lorem ipsum dolor sit amet</li>
-
-                    <li>Consectetur adipiscing elit</li>
-
-                    <li>Integer molestie lorem at massa</li>
-
-                    <li>Facilisis in pretium nisl aliquet</li>
-
-                    <li>Nulla volutpat aliquam velit</li>
-
-                    <li>Faucibus porta lacus fringilla vel</li>
-
-                    <li>Aenean sit amet erat nunc</li>
-
-                    <li>Eget porttitor lorem</li>
-                </ol>
-
-                <h2>Addressess</h2>
-
-                <address>
-                    <strong>Twitter, Inc.</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
-                    <abbr title="Phone">P:</abbr> (123) 456-7890
-                </address>
-
-                <address>
-                    <strong>Full Name</strong><br>
-                    <a href="mailto:#">first.last@example.com</a>
-                </address>
-
-                <h2>Form</h2>
-
-                <form role="form">
-                    <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>
-
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="inputPassword3" class="col-sm-2 form-control-label">Password</label>
-
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <div class="checkbox">
-                                <label><input type="checkbox"> Remember me</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">Sign in</button>
-                        </div>
-                    </div>
-                </form>
-
-                <h2>Buttons</h2>
-
-                <p><button type="button" class="btn btn-primary btn-lg">Large button</button> <button type="button" class="btn btn-default btn-lg">Large button</button></p>
-
-                <p><button type="button" class="btn btn-primary">Default button</button> <button type="button" class="btn btn-default">Default button</button></p>
-
-                <p><button type="button" class="btn btn-primary btn-sm">Small button</button> <button type="button" class="btn btn-default btn-sm">Small button</button></p>
-
-                <p><button type="button" class="btn btn-primary btn-xs">Extra small button</button> <button type="button" class="btn btn-default btn-xs">Extra small button</button></p>
-
-                <p><button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button> <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button></p><br class="clear">
+                   </div>
+                                    
             </div><!-- /column -->
         </div><!-- /row -->
     </div><!-- /container -->
-
 
 </div>
 <!--/ content -->
@@ -333,64 +200,43 @@
 
         <div class="container">
 	        <div class="row">
-		        <div class="col-sm-4 col-xs-6">
+		        <div class="col-md-4 col-sm-6 col-xs-12">
 			    <h4>About</h4>
 
                 <address>
-                    <strong>Twitter, Inc.</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
+                    <strong>Random, Inc.</strong><br>
+                    201 Front Street, Suite 601<br>
+                    New York, NY 1234<br>
                     <abbr title="Phone">P:</abbr> (123) 456-7890
                 </address>
 
                 <address>
                     <strong>Full Name</strong><br>
-                    <a href="mailto:#">first.last@example.com</a>
+                    <a href="mailto:#">info@random.com</a>
                 </address>
+                
+                <p>Display font by: <cite><a href="http://www.yoworks.com/">YOWorks</a></cite></p>
 
+				<hr class="hidden-sm-up">
 		        </div>
-		        <div class="col-sm-4 col-xs-6">
-			        <h4>Posts</h4>
-			        <div class="post-excerpts">
-			          <div class="row blog-post">
-				          <figure class="col-xs-3 p-x-0"><img class="img-fluid" src="/images/women-working-on-vengeance-dive-bomber-TN-1943.jpg" alt="Women working on Vengeance dive bomber, TN 1943"></figure>
-				        <div class="col-xs-9">
-					        			            <p class="blog-post-meta">January 1, 2014</p>
-			            <h5 class="blog-post-title"><a href="/post.html">Sample blog post</a></h5>
-				        </div>
+		        <div class="col-md-4 col-sm-6 col-xs-12">
+			        <h4>Recent Posts</h4>
+			        <div class="post-excerpts small">
+			          <div class="post">
+    			            <h6 class="blog-post-title"><a href="/post.html">Selfies man braid ethical ramps chia, synth flexitarian</a></h6>
+    			            <span class="blog-post-meta">January 1, 2014</span>
 			          </div><!-- /.blog-post -->     
-			
-			
-			          <div class="row blog-post">
-				          <figure class="col-xs-3 p-x-0"><img class="img-fluid" src="/images/women-working-on-vengeance-dive-bomber-TN-1943.jpg" alt="Women working on Vengeance dive bomber, TN 1943"></figure>
-				        <div class="col-xs-9">
-					        			            <p class="blog-post-meta">January 1, 2014</p>
-			            <h5 class="blog-post-title"><a href="/post.html">Sample blog post</a></h5>
-				        </div>
+			          <div class="post">
+    			            <h6 class="blog-post-title"><a href="/post.html">Selfies man braid ethical ramps chia, synth flexitarian</a></h6>
+    			            <span class="blog-post-meta">January 1, 2014</span>
 			          </div><!-- /.blog-post -->     
-			          
-			
-			         <div class="row blog-post">
-				          <figure class="col-xs-3 p-x-0"><img class="img-fluid" src="/images/women-working-on-vengeance-dive-bomber-TN-1943.jpg" alt="Women working on Vengeance dive bomber, TN 1943"></figure>
-				        <div class="col-xs-9">
-					        			            <p class="blog-post-meta">January 1, 2014</p>
-			            <h5 class="blog-post-title"><a href="/post.html">Sample blog post</a></h5>
-				        </div>
-			          </div><!-- /.blog-post -->     
- 
-			          
-			
-					 <div class="row blog-post">
-				          <figure class="col-xs-3 p-x-0"><img class="img-fluid" src="/images/women-working-on-vengeance-dive-bomber-TN-1943.jpg" alt="Women working on Vengeance dive bomber, TN 1943"></figure>
-				        <div class="col-xs-9">
-					        			            <p class="blog-post-meta">January 1, 2014</p>
-			            <h5 class="blog-post-title"><a href="/post.html">Sample blog post</a></h5>
-				        </div>
-			          </div><!-- /.blog-post -->     
-           
+			          <div class="post">
+    			            <h6 class="blog-post-title"><a href="/post.html">Selfies man braid ethical ramps chia, synth flexitarian</a></h6>
+    			            <span class="blog-post-meta">January 1, 2014</span>
+			          </div><!-- /.blog-post -->      
 			        </div>
 		        </div>
-		        <div class="col-sm-4">
+		        <div class="col-md-4 col-sm-12 text-sm-right text-xs-center">
 			            <h3>Social Media</h3>
 			            <ul class="social list-inline">
                             <li class="list-inline-item">
@@ -431,7 +277,7 @@
 		        </div>
 		       
 				<nav role="navigation" class="text-xs-center">
-						<p><small>Copyright © 2016 - 2016, Widget Inc. All Rights Reserved.</small></p>
+						<p><small>Copyright © 2016 - 2016, Random Inc. All Rights Reserved.</small></p>
 						<ul class="list-inline small">
 							<li class="list-inline-item"><a href="#">Terms of Service</a></li>
 							<li class="list-inline-item"><a href="#">Privacy Policy</a></li>
@@ -448,6 +294,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 	<script src="js/tether/js/tether.min.js"></script> 
+	<script src="js/picturefill/picturefill.min.js"></script> 
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/webshims/js-webshim/minified/polyfiller.js"></script>
 	<script src="js/jquery.cycle2.min/index.js"></script> 
@@ -461,5 +308,79 @@
     webshims.polyfill('forms');
 </script>
 <script src="//localhost:35729/livereload.js"></script>
+
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signinLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h4 class="modal-title" id="signinLabel">Please sign in</h4>
+    </div>
+    <div class="modal-body">
+<form class="form-signin">
+	<div class="form-group">
+    <label class="sr-only" for="inputUsername">Username</label>
+    <input type="text" autofocus="" required="" placeholder="Username" class="form-control" id="inputUsername">
+	</div>
+	<div class="form-group">
+    <label class="sr-only" for="inputPassword">Password</label>
+    <input type="password" required="" placeholder="Password" class="form-control" id="inputPassword">
+	</div>
+    <div class="checkbox">
+      <label class="c-input c-checkbox">
+        <input type="checkbox" value="remember-me">
+          <span class="c-indicator"></span>
+           Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-lg btn-info btn-block">Sign in</button>
+  </form>
+  </div>
+   
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h4 class="modal-title" id="signinLabel">Please Register</h4>
+    </div>
+    <div class="modal-body">
+<form class="form-signin">
+	<div class="form-group">
+    <label class="sr-only" for="inputUsername">Username</label>
+    <input type="text" autofocus="" required="" placeholder="Username" class="form-control" id="inputUsername">
+	</div>
+	<div class="form-group">
+    <label class="sr-only" for="inputPassword">Password</label>
+    <input type="password" required="" placeholder="Password" class="form-control" id="inputPassword">
+	</div>
+		<div class="form-group">
+    <label class="sr-only" for="inputPassword">Confirm Password</label>
+    <input type="password" required="" placeholder="Confirm Password" class="form-control" id="confirmInputPassword" data-dependent-validation="inputPassword"  data-errormessage="You'll need to confirm your password!">
+	</div>
+    <div class="checkbox">
+      <label class="c-input c-checkbox">
+        <input type="checkbox" value="remember-me">
+          <span class="c-indicator"></span>
+           Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-lg btn-success btn-block">Register</button>
+  </form>
+  </div>
+   
+  </div>
+</div>
+</div>
+
+
 </body>
 </html>

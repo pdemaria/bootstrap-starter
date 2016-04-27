@@ -16,41 +16,49 @@
     <header class="main" role="banner">
 	    <nav role="navigation" class="navbar clearfix"> 
 	    	<div class="container">
-						<div class="breaking-news">
-                           <h3>Trending:</h3> <a title="" href="/post.html">Jade is your Cat of the Week...</a>
-      					</div>
-					
-					<ul class="list-inline pull-sm-right">
-                        <li class="list-inline-item">
-	                        <a href="/login.html" class="btn btn-secondary lnk-login" rel="nofollow">Log in</a>
+		    	<div class="row">			    	
+					<div class="col-sm-4 col-xs-12 breaking-news">
+						<ul class="nav navbar-nav nav-pills">
+							<li class="nav-item">
+							<a title="" href="/post.html" class="nav-link"><strong>Trending:</strong> Jade is your Cat of the Week...</a>
+						</li>
+						</ul>
+  					</div>
+  					<div class="col-sm-8 col-xs-12">
+					<ul class="nav navbar-nav nav-pills pull-sm-right">
+                       
+                        <li class="nav-item">
+                            <a href="http://www.facebook.com/" target="_blank" class="nav-link facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://twitter.com/" target="_blank" class="nav-link twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+						<li class="nav-item">
+                            <a href="http://www.youtube.com/" target="_blank" class="nav-link youtube"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        
+	   					<li class="nav-item">
+						<form role="search" class="form-inline pull-sm-right" target="_top" method="get" action="/search-results">
+		                    <div class="input-group">
+			                    <label for="q" class="sr-only">Enter your search terms</label> 
+		                        <label for="sbb" class="sr-only">Submit search form</label> 
+			                    <input type="text" class="form-control" placeholder="Search" maxlength="255" size="25" name="q">
+			                    <span class="input-group-btn">
+		                        <button name="sa" class="btn btn-secondary text-muted" id="sbb" value="" type="submit"><span class="fa fa-search"></span></button>
+			                    </span>
+		                    </div>	                        
+	                    </form>		
+	   					</li>
+	                        
+                        <li class="nav-item">
+	                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#signInModal" >Log in</button>
 	                    </li>
-                        <li class="list-inline-item">
-	                        <a class="lnk-register btn btn-secondary" href="/register.html">Register</a>
+                        <li class="nav-item">
+	                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#registerModal" >Register</button>
                         </li>
 					</ul>
-					
-					<form role="search" class="form-inline pull-sm-right" target="_top" method="get" action="/search-results">
-	                    <div class="input-group">
-		                    <label for="q" class="sr-only">Enter your search terms</label> 
-	                        <label for="sbb" class="sr-only">Submit search form</label> 
-		                    <input type="text" class="form-control" placeholder="Search" maxlength="255" size="25" name="q">
-		                    <span class="input-group-btn">
-	                        <button name="sa" class="btn btn-secondary text-muted" id="sbb" value="" type="submit"><span class="fa fa-search"></span></button>
-		                    </span>
-	                    </div>	                        
-                    </form>		
-					
-					<ul class="list-inline pull-sm-right social">
-                        <li class="list-inline-item">
-                            <a href="http://www.facebook.com/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="http://twitter.com/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                        </li>
-						<li class="list-inline-item">
-                            <a href="http://www.youtube.com/" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
-                        </li>
-					</ul>
+  					</div>
+		    	</div>
 			</div>
 	    </nav>	
 
@@ -95,11 +103,15 @@
                     <li class="nav-item">
                         <a href="https://github.com/pdemaria/bootstrap-starter" target="_blank" class="nav-link">Support</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="cart.html" target="_blank" class="nav-link"><i class="fa fa-shopping-basket"></i>
+</a>
+                    </li>
                 </ul>
                         </div>
             </nav>
     </header>
-    
+    {{#unless no_breadcrumbs}}
     <!-- container -->
     <div id="content" role="main">
 	<div class="container">  
@@ -112,3 +124,4 @@
 			</div>
 		</div>
 	</div>
+	{{/unless}}

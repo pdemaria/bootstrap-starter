@@ -2,13 +2,24 @@
 // Footer Styles
 // --------------------------------------------------
 footer.main {
-	background: $footer-bg-color $footer-img $footer-img-repeat $footer-img-position;		
-	.container {
-		padding: 1rem;
-		color: $footer-text;
-		@if $footer-height != null {
-			min-height: $footer-height;		
+  background: $footer-bg-color $footer-img $footer-img-repeat $footer-img-position;
+  
+  .container {
+    padding: 1rem;
+    color: $footer-text;
+		a {
+	    color: lighten($link-hover-color, 15%);
 		}
-	}	
+		
+		a:hover {
+	    color: lighten($link-hover-color, 25%);
+		}
+		
+		hr {
+			border-top: 1px solid #CCC;
+		}
+    @if $footer-height != null {
+      min-height: $footer-height;
+    }
+  }
 }
-

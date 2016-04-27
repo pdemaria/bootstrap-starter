@@ -106,7 +106,8 @@ module.exports = function(grunt) {
 					{expand: true, cwd: '<%= project.assets %>webshim/', src: ['**/*'], dest: '<%= project.app %>js/webshims/'},
 					{expand: true, cwd: '<%= project.assets %>jquery.cycle2.min/', src: ['**/*'], dest: '<%= project.app %>js/jquery.cycle2.min/'},
 					{expand: true, cwd: '<%= project.assets %>jquery-migrate/', src: ['**/*'], dest: '<%= project.app %>js/jquery-migrate/'},
-					{expand: true, cwd: '<%= project.assets %>tether/dist/', src: ['**/*'], dest: '<%= project.app %>js/tether/'}
+					{expand: true, cwd: '<%= project.assets %>tether/dist/', src: ['**/*'], dest: '<%= project.app %>js/tether/'},
+					{expand: true, cwd: '<%= project.assets %>picturefill/dist/', src: ['**/*'], dest: '<%= project.app %>js/picturefill/'}
 				]
 	    	}
 	    },
